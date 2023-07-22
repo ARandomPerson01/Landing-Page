@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Tektur:wght@400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 3.5rem 0 0 0;
+    font-family: "Poppins", sans-serif;
+    background-color: gainsboro; 
+  }
+  
+  .grid {
+      display: grid;
+    }
+    
+  .main {
+      overflow: hidden;
+      max-width: 100%;
+    }
+  
+/*ESTILOS GENERALES*/
+h1, h2, h3, h4{
+    color: #000;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+a{
+    list-style: none;
+    color: #000;
+    font-weight: bold;
+}
+
+/*HEADER*/
+.header{
+    width: 100%;
+    max-height: 5rem;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    height: 5rem;   
+}
+
+.nav-bar{
+    max-width: 1300px;
+    height: 5rem;
+    margin: auto;
+    align-items: center;
+    background: white;
+    text-align: center;
+
+}
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+}
+
+.nav-menu ul{
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+
+}
+
+.nav-menu li{
+    font-size: 1.3rem;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.nav-elements-img{
+    max-width: 18%;
+}
+
+.nav-elements-img img{
+    max-width: 100%;
+}
+
+.nav-links{
+    font-size: 1.2rem;
+}
+
+.nav-links:hover{
+    color: #00000078;
+    border-bottom: 3px solid #00000078;
+}
+
+
+/*COVER*/
+.information-cover{
+    max-width: 1300px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+.information-text{
+    max-width: 30%;
+}
+
+.information-text h1{
+    text-align: left;
+}
+
+.information-text p{
+    text-align: left;
+}
+
+.img-cover{
+    width: 100%;
+}
+
+.img-cover img{
+    width: 100%;
+    clip-path: inset(22% 0 34% 0);
+}
+
+/*PRINCIPAL TITTLE*/
+.principal-tittle{
+    max-width: 100%;
+    margin: auto;
+    background-color: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/*GALERRY*/
+.gallery{
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.container-gallery{
+    display: flex;
+    width: 1450px;
+    height: 740px;
+    margin: auto;
+}
+
+.img-gallery{
+    width: 100%;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .9;
+    transition: .5 ease;
+    border: 3px solid #000;
+}
+
+.gallery-img{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    margin-right: 0;
+    margin-left: 0;
+    border-left: 0;
+}
+
+.img-gallery:hover{
+    cursor: crosshair;
+    width: 500px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+/*MEDIUM TITTLE*/
+.medium-tittle{
+    background: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.medium-tittle h3{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/*ANIME SINOPSIS*/
+.anime-sinopsis{
+    max-width: 100%;
+}
+
+.about-anime{
+    max-width: 1300px;
+    margin: auto;
+}
+
+.tittle-anime{
+    margin: 20px 0 20px 0;
+}
+
+.tittle-anime h4{
+    font-family: 'Tektur', sans-serif;
+    text-align: left;
+    font-size: 2rem;
+    max-width: 100%;
+    font-weight: bold;
+}
+
+.img-anime{
+    max-width: 100%;
+}
+
+.img-anime img{
+    max-width: 100%;
+}
+
+.img-anime-7 img{
+    width: 100% ;
+}
+
+.sinopsis ul li{
+    list-style: square;
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 1.05rem;
+}
+
+.anime-span{
+    font-weight: bold;
+}
+
+/*QUESTIONS*/
+.questions{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 100px 0;
+    text-align: center;
+
+}
+
+
+.questions-container{
+    display: grid;
+    gap: 2em;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.questions-padding{
+    padding: 0;
+    transition: .3s;
+    border: 1px solid #5454d4;
+    border-radius: 6px;
+}
+
+.questions-padding--add{
+    padding-bottom: 30px;
+}
+
+.questions-answers{
+    padding: 0px 30px 0px;
+    overflow: hidden;
+}
+
+.questions-title{
+    text-align: left;
+    display: flex;
+    font-size: 20px;
+    padding: 30px 0 30px;
+    cursor: pointer;
+    color: var(--color-title);
+    justify-content: space-between;
+}
+
+.questions-arrow{
+    border-radius: 50%;
+    background-color: var(--color-title);
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+    margin-left: 10px;
+    transition: transform .3s;
+}
+
+.questions-arrow--rotate{
+    transform: rotate(180deg);
+}
+
+.questions-show{
+    text-align: left;
+    height: 0;
+    transition: height .3s;
+}
+
+.questions-img{
+    display: block;
+}
+
+.questions-copy{
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+
+}
+
+/*FOOTER*/
+footer{
+    width: 100%;
+    background: #00000062;
+    margin-top: 6.3rem;
+}
+
+.footer-container{
+    display: flex;
+    max-width: 1300px;
+    margin: auto;
+    justify-content: space-around;
+
+}
+
+.first-part-footer{
+    max-width: 24%;
+    margin: auto;
+    display: grid;
+    margin: 10px 0 10px 10px;
+}
+
+.footer-img{
+    margin-top: auto;
+}
+
+.footer-img img{
+    width: 100%;
+}
+.footer-copyright{
+    margin: auto;
+    text-align: center;
+}
+
+.footerspan{
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: auto;
+    color: #fff;
+    font-size: 1rem;
+}
+
+
+.footer-text{
+    max-width: 100%;
+    text-align: center;
+    margin: 10px 0 10px 10px;
+    display: grid;
+
+}
+
+.footer-principal-tittle h1{
+    color: #fff;
+}
+
+.footer-links{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-tittle{
+    width: 100%;
+}
+
+.footer-tittle h2{
+    color: #fff;
+}
+
+.footer-link{
+    margin: auto;
+    margin: 0 10px 0 10px;
+}
+
+.footer-link a{
+    color: #fff;
+}
+
+/*FOOTER-LAST-PART (SOCIAL-MEDIA)*/
+
+.footer-last-part{
+    width: 20%;
+    margin: auto;
+    margin-right: 10px;
+    margin-left: 0;
+    display: grid;
+}
+
+.social-text{
+    margin-bottom: 10px;
+}
+
+.social-text h3{
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+/*FOOTER - SOCIAL MEDIA*/
+.social-media{
+    width: 100%;
+    display: flex;
+}
+
+.socialmedia-link{
+    color: #fff;
+    margin: auto;
+    font-size: 3.2rem;
+
+}
+
+.bx{
+    width: 100%;
+    transition: .2s ease-in-out;
+    border: 3px solid #fff;
+    border-radius: 100%;
+  }
+
+.bx:hover{
+    color: #fff;
+    background-color: #000;
+    border: 3px solid #000;
+    border-radius: 100%;
+}
+  
