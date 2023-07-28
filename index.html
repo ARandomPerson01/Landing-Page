@@ -6,11 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>¡Mejores Animes del Año!</title>
     <link rel="shortcut icon" href="imgs/Narutomaki.png" type="image/x-icon" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+    <!--
     <header class="header">
         <nav class="nav-bar">
             <div class="nav-menu" id="nav-menu">
@@ -25,7 +34,67 @@
                 </ul>
             </div>
         </nav>
-    </header>
+    </header>-->
+
+    <!--
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#">Web Dev Creative</a></div>
+            <ul class="links">
+                <li><a href="hero">Home</a></li>
+                <li><a href="about">About us</a></li>
+                <li><a href="services">Our Services</a></li>
+                <li><a href="contacts">Contacts</a></li>
+            </ul>
+            <a href="#" class="action_btn">Get started</a>
+            <div class="toogle-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="dropdown_menu">
+            <li><a href="hero">Home</a></li>
+            <li><a href="about">About us</a></li>
+            <li><a href="services">Our Services</a></li>
+            <li><a href="contacts">Contacts</a></li>
+            <li><a href="#" class="action_btn">Get started</a></li>
+        </div>
+    </header>-->
+
+    <header class="header" id="header">
+        <nav class="nav container">
+          <a href="" class="navL">
+            <img src="" alt="" class="navL-img" />
+            Nube
+          </a>
+  
+          <div class="navM" id="nav-menu">
+            <ul class="navList">
+              <li class="navItem">
+                <a href="#home" class="navLink active-link"> Inicio </a>
+              </li>
+              <li class="navItem">
+                <a href="#about-us" class="navLink"> Acerca de Nosotros </a>
+              </li>
+              <li class="navItem">
+                <a href="#destacados-del-año" class="navLink"> Destacados del Año </a>
+              </li>
+              <li class="navItem">
+                <a href="#preguntas-frecuentes" class="navLink"> Preguntas Frecuentes </a>
+              </li>
+            </ul>
+  
+            <div class="navclose" id="nav-close">
+              <i class="bx bx-x"></i>
+            </div>
+          </div>
+  
+          <div class="navToggle" id="nav-toggle">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </nav>
+      </header>
+
 
     <main class="main">
         <section class="information-cover">
@@ -302,8 +371,55 @@
     </main>
 
 
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="row">
+                <div class="footer-col footer-img">
+                    <div class="first-part-footer">
+                        <div class="footer-img">
+                            <a href="#"><img src="./imgs/Logo.png" alt=""></a>
+                        </div>
+
+                        <div class="footer-copyright">
+                            <span class="footerspan">&copy; ANIME FAN PAGE <br>Todos los Derechos Reservados 2023</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">shipping</a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">order status</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>online shop</h4>
+                    <ul>
+                        <li><a href="#">watch</a></li>
+                        <li><a href="#">bag</a></li>
+                        <li><a href="#">shoes</a></li>
+                        <li><a href="#">dress</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col footer-social">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
+
+
+    <!--
     <footer>
         <section class="footer-container">
             <div class="first-part-footer">
@@ -427,8 +543,11 @@
             </div>
 
         </section>
-    </footer>
+    </footer>-->
+
+
     <script src="questions.js"></script>
+    <script src="navbar.js"></script>
 </body>
 
 </html>
