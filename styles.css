@@ -224,10 +224,11 @@ header a:hover{
     align-items: center;
     column-gap: 0.5rem;
     font-weight: 500;
+    width: 20%;
   }
   
   .navL-img {
-    width: 1.25rem;
+    width: 100%;
   }
   
   .navLink, .navL, .navToggle, .navclose {
@@ -454,11 +455,15 @@ header a:hover{
     width: 100% ;
 }
 
-.sinopsis ul li{
+.sinopsis li{
     list-style: square;
     margin-left: 20px;
     margin-top: 10px;
     font-size: 1.05rem;
+}
+
+.sinopsis li::marker{
+    color: orange;
 }
 
 .anime-span{
