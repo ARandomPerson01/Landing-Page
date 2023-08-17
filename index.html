@@ -4,372 +4,452 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>¡Mejores Animes del Año!</title>
+    <title>Mundo Anime</title>
     <link rel="shortcut icon" href="imgs/Narutomaki.png" type="image/x-icon" />
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <!--
-    <header class="header">
-        <nav class="nav-bar">
-            <div class="nav-menu" id="nav-menu">
-                <ul>
-                    <li class="nav-elements-img nav-elements-1"><a href="#" class="nav-logo"><img src="./imgs/Logo.png"
-                                alt=""></a></li>
-                    <li class="nav-elements nav-elements-2"><a href="#about-us" class="nav-links">Acerca de</a></li>
-                    <li class="nav-elements nav-elements-3"><a href="#destacados-del-año" class="nav-links">Animes
-                            destacados</a></li>
-                    <li class="nav-elements nav-elements-4"><a href="#preguntas-frecuentes" class="nav-links">Preguntas
-                            frecuentes</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>-->
+    <header class="header" id="header">
+        <nav class="nav">
+            <a href="#" class="navL">
+                <img src="./imgs/Logo.png" alt="" class="navL-img" />
+            </a>
 
-    <!--
-    <header>
-        <div class="navbar">
-            <div class="logo"><a href="#">Web Dev Creative</a></div>
-            <ul class="links">
-                <li><a href="hero">Home</a></li>
-                <li><a href="about">About us</a></li>
-                <li><a href="services">Our Services</a></li>
-                <li><a href="contacts">Contacts</a></li>
-            </ul>
-            <a href="#" class="action_btn">Get started</a>
-            <div class="toogle-btn">
+            <div class="navM" id="nav-menu">
+                <ul class="navList">
+                    <li class="navItem">
+                        <a href="#home" class="navLink active-link"> Inicio </a>
+                    </li>
+                    <li class="navItem">
+                        <a href="#ultimas-noticias" class="navLink">Últimas noticias</a>
+                    </li>
+                    <li class="navItem">
+                        <a href="#destacados-del-año" class="navLink"> Destacados del Año </a>
+                    </li>
+                    <li class="navItem">
+                        <a href="#preguntas-frecuentes" class="navLink"> Preguntas Frecuentes </a>
+                    </li>
+                </ul>
+
+                <div class="navclose" id="nav-close">
+                    <i class="bx bx-x"></i>
+                </div>
+            </div>
+
+            <div class="navToggle" id="nav-toggle">
                 <i class="fa-solid fa-bars"></i>
             </div>
-        </div>
-
-        <div class="dropdown_menu">
-            <li><a href="hero">Home</a></li>
-            <li><a href="about">About us</a></li>
-            <li><a href="services">Our Services</a></li>
-            <li><a href="contacts">Contacts</a></li>
-            <li><a href="#" class="action_btn">Get started</a></li>
-        </div>
-    </header>-->
-
-    <header class="header" id="header">
-        <nav class="nav container">
-          <a href="#" class="navL">
-            <img src="./imgs/Logo.png" alt="" class="navL-img" />
-            
-          </a>
-  
-          <div class="navM" id="nav-menu">
-            <ul class="navList">
-              <li class="navItem">
-                <a href="#home" class="navLink active-link"> Inicio </a>
-              </li>
-              <li class="navItem">
-                <a href="#about-us" class="navLink"> Acerca de Nosotros </a>
-              </li>
-              <li class="navItem">
-                <a href="#destacados-del-año" class="navLink"> Destacados del Año </a>
-              </li>
-              <li class="navItem">
-                <a href="#preguntas-frecuentes" class="navLink"> Preguntas Frecuentes </a>
-              </li>
-            </ul>
-  
-            <div class="navclose" id="nav-close">
-              <i class="bx bx-x"></i>
-            </div>
-          </div>
-  
-          <div class="navToggle" id="nav-toggle">
-            <i class="fa-solid fa-bars"></i>
-          </div>
         </nav>
-      </header>
+    </header>
 
 
     <main class="main">
-        <section class="information-cover">
-            <div class="information-text" id="about-us">
-                <h1>¿Quiénes somos?</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error magnam quia quae cum ipsa,
-                    perspiciatis a est libero eos perferendis consequatur ducimus dolores aliquid! Dignissimos inventore
-                    ab quod exercitationem dicta.</p>
+        <section class="cover" id="home">
+            <h1>MUNDO ANIME</h1>
+            <p>La Página donde encontraras las últimas novedades de este mundo animado</p>
+        </section>
+
+        <section class="container-news" id="ultimas-noticias">
+            <div class="tittle-carrousel">
+                <h2>ÚLTIMAS NOTICIAS</h2>
             </div>
 
-            <div class="img-cover">
-                <img src="./imgs/Anime-Wallpaper.webp" alt="">
+            <div id="carouselExampleCaptions" class="carousel slide carrousel-fade" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./imgs/Slider-Goku.jpg" class="d-block w-100 img-carrousel img-carrousel-1" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <div class="box">
+                                <h3>Dragon Ball Super</h3>
+                                <h4>¿Qué pasó con el Ultra Instinsto desde el Torneo del Poder?</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci sed exercitationem
+                                    facere enim eligendi quas velit maxime modi, praesentium officiis delectus sit nulla
+                                    doloremque expedita aliquam eveniet quam optio accusamus?</p>
+                                <a href="#">Leer más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./imgs/Slider-One-Piece-Gear-5.webp"
+                            class="d-block w-100 img-carrousel img-carrousel-2" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <div class="box">
+                                <h3>One Piece</h3>
+                                <h4>¿El Gear 5 "rompió" el internet?</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci sed exercitationem
+                                    facere enim eligendi quas velit maxime modi, praesentium officiis delectus sit nulla
+                                    doloremque expedita aliquam eveniet quam optio accusamus?</p>
+                                <a href="#">Leer más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./imgs/Slider-Naruto-Shippuden.webp"
+                            class="d-block w-100 img-carrousel img-carrousel-3" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <div class="box">
+                                <h3>Naruto Shippuden</h3>
+                                <h4>¿Cuál es el mejor modo de Naruto?</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci sed exercitationem
+                                    facere enim eligendi quas velit maxime modi, praesentium officiis delectus sit nulla
+                                    doloremque expedita aliquam eveniet quam optio accusamus?</p>
+                                <a href="#">Leer más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./imgs/Slider-Eren-Jaeger.webp" class="d-block w-100 img-carrousel img-carrousel-4"
+                            alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <div class="box">
+                                <h3>Shingeki no Kyojin</h3>
+                                <h4>¿Qué pasará con Eren en Shingeki no Kyojin?</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci sed exercitationem
+                                    facere enim eligendi quas velit maxime modi, praesentium officiis delectus sit nulla
+                                    doloremque expedita aliquam eveniet quam optio accusamus?</p>
+                                <a href="#">Leer más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./imgs/Slider-Tanjiro-Kamado.jpg" class="d-block w-100 img-carrousel img-carrousel-5"
+                            alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <div class="box">
+                                <h3>Kimetsu no Yaiba</h3>
+                                <h4>¿Qué ocurrirá en la próxima temporada?</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci sed exercitationem
+                                    facere enim eligendi quas velit maxime modi, praesentium officiis delectus sit nulla
+                                    doloremque expedita aliquam eveniet quam optio accusamus?</p>
+                                <a href="#">Leer más</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </section>
 
-        <div class="principal-tittle" id="destacados-del-año">
-            <h2>ANIMES DESTACADOS DEL AÑO</h2>
-        </div>
+        <section class="container-images" id="destacados-del-año">
+            <div class="principal-tittle">
+                <h1>ANIMES DESTACADOS DEL AÑO</h1>
+            </div>
 
-        <section class="gallery">
-            <div class="container-gallery">
-                <a href="#Shingeki-no-Kyojin" class="img-gallery"><img class="img-gallery gallery-img img-1"
-                        src="imgs/Cover-Shingeki.png" alt=""></a>
-                <a href="#Dr_Stone" class="img-gallery"><img class="img-gallery gallery-img img-2"
-                        src="imgs/Cover-Dr_Stone.jpg" alt=""></a>
-                <a href="#Kimetsu-no-Yaiba" class="img-gallery"><img class="img-gallery gallery-img img-3"
-                        src="imgs/Cover-Kimetsu.jpg" alt=""></a>
-                <a href="#Jujutsu-Kaisen" class="img-gallery"><img class="img-gallery gallery-img img-4"
-                        src="imgs/Cover-Jujutsu-Kaisen.jpg" alt=""></a>
-                <a href="#Oshi-no-Ko" class="img-gallery"><img class="img-gallery gallery-img img-5"
-                        src="imgs/Cover-Oshi-no-Ko.jpg" alt=""></a>
-                <a href="#Record-of-Ragnarok" class="img-gallery"><img class="img-gallery gallery-img img-6"
-                        src="imgs/Cover-Record-of-Ragnarok.jpg" alt=""></a>
-                <a href="#Spy-x-Family" class="img-gallery"><img class="img-gallery gallery-img img-7"
-                        src="imgs/Cover-Spy-x-Family.jpg" alt=""></a>
+            <div class="gallery">
+                <div class="container-gallery">
+                    <a href="#Shingeki-no-Kyojin" class="img-gallery"><img class="img-gallery gallery-img img-1"
+                            src="imgs/Cover-Shingeki.png" alt=""></a>
+                    <a href="#Dr_Stone" class="img-gallery"><img class="img-gallery gallery-img img-2"
+                            src="imgs/Cover-Dr_Stone.jpg" alt=""></a>
+                    <a href="#Kimetsu-no-Yaiba" class="img-gallery"><img class="img-gallery gallery-img img-3"
+                            src="imgs/Cover-Kimetsu.jpg" alt=""></a>
+                    <a href="#Jujutsu-Kaisen" class="img-gallery"><img class="img-gallery gallery-img img-4"
+                            src="imgs/Cover-Jujutsu-Kaisen.jpg" alt=""></a>
+                    <a href="#Oshi-no-Ko" class="img-gallery"><img class="img-gallery gallery-img img-5"
+                            src="imgs/Cover-Oshi-no-Ko.jpg" alt=""></a>
+                    <a href="#Record-of-Ragnarok" class="img-gallery"><img class="img-gallery gallery-img img-6"
+                            src="imgs/Cover-Record-of-Ragnarok.jpg" alt=""></a>
+                    <a href="#Spy-x-Family" class="img-gallery"><img class="img-gallery gallery-img img-7"
+                            src="imgs/Cover-Spy-x-Family.jpg" alt=""></a>
+                </div>
             </div>
         </section>
 
-        <div class="medium-tittle">
-            <h3>SINOPSIS</h3>
-        </div>
-
-        <section class="anime-sinopsis">
-            <div class="about-anime anime-1" id="Shingeki-no-Kyojin">
-                <div class="tittle-anime tittle-anime-1">
-                    <h4>Shingeki no Kyojin - The Final Season (Parte 2)</h4>
-                </div>
-                <div class="img-anime img-anime-1">
-                    <img src="./imgs/Banner-Shingeki.png" alt="">
-                </div>
-                <div class="sinopsis sinopsis-anime-1">
-                    <ul>
-                        <li><span class="anime-span">Fecha de estreno:</span> 3 de marzo de 2023</li>
-                        <li><span class="anime-span">Temporada:</span> 4 - Parte 2</li>
-                        <li><span class="anime-span">Sinopsis:</span> Eren activa el Rumbling en un intento de destruir
-                            el mundo. Innumerables Titanes inician
-                            su marcha, pisoteando todo a su paso. Mikasa, Armin, Jean, Connie, Hanae, Reiner, Annie,
-                            Pieck y el mortalmente herido Levi seran los que quedan desafían a Eren en una batalla final
-                            para detenerlo, entonces, todo parece indicar que la única alternativa que tiene el mundo
-                            para evitar la aniquilación radica en los antiguos aliados de Eren Jaeger.</li>
-                    </ul>
-                </div>
+        <section class="container-sinopsis">
+            <div class="medium-tittle">
+                <h2>¿DE QUÉ TRATA CADA TÍTULO?</h2>
             </div>
 
-            <div class="about-anime anime-2" id="Dr_Stone">
-                <div class="tittle-anime tittle-anime-2">
-                    <h4>Dr. Stone - New World</h4>
-                </div>
-                <div class="img-anime img-anime-2">
-                    <img src="./imgs/Banner-Dr_Stone-2.jpg" alt="">
-                </div>
-                <div class="sinopsis sinopsis-anime-2">
-                    <ul>
-                        <li><span class="anime-span">Fecha de estreno:</span> 6 de abril de 2023.</li>
-                        <li><span class="anime-span">Temporada:</span> 3</li>
-                        <li><span class="anime-span">Sinopsis:</span> Tras el final de la "Stone Wars", los antiguos
-                            miembros del imperio de Tsukasa se
-                            unen al reino de la Ciencia para construir un barco capaz de surcar los mares para llegar al
-                            otro
-                            lado del mundo y buscar respuestas al misterio global de la petrificación, encontrandose con
-                            obstaculos en el camino que requeriran de nuevas soluciones cientificas realizadas a manos
-                            de Senku y compañia.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="about-anime anime-3" id="Kimetsu-no-Yaiba">
-                <div class="tittle-anime tittle-anime-3">
-                    <h4>Kimetsu no Yaiba - Arco de la Aldea del Herrero</h4>
-                </div>
-                <div class="img-anime img-anime-3">
-                    <img src="./imgs/Banner-Kimetsu.jpg" alt="">
-                </div>
-                <div class="sinopsis sinopsis-anime-3">
-                    <ul>
-                        <li><span class="anime-span">Fecha de estreno:</span> 9 de abril de 2023.</li>
-                        <li><span class="anime-span">Temporada:</span> 3</li>
-                        <li><span class="anime-span">Sinopsis:</span> Tras los acontecimientos de la segunda temporada,
-                            Tanjiro viaja a la Aldea de los
-                            Herreros con el fin de que estos puedan reparar la espada que necesita para seguir matando
-                            demonios para continuar con su venganza contra estos por haber matado a su familia,
-                            encontrandose el y sus compañeros con varios problemas en el camino.</li>
-                    </ul>
-                </div>
-
-                <div class="about-anime anime-4" id="Jujutsu-Kaisen">
-                    <div class="tittle-anime tittle-anime-4">
-                        <h4>Jujutsu Kaisen</h4>
+            <div class="anime-sinopsis">
+                <div class="about-anime anime-1" id="Shingeki-no-Kyojin">
+                    <div class="tittle-anime tittle-anime-1">
+                        <h3>Shingeki no Kyojin - The Final Season (Parte 2)</h3>
                     </div>
-                    <div class="img-anime img-anime-4">
-                        <img src="./imgs/Banner-Jujutsu-Kaisen.jpg" alt="">
+                    <div class="img-anime img-anime-1">
+                        <img src="./imgs/Banner-Shingeki.png" alt="">
                     </div>
-                    <div class="sinopsis sinopsis-anime-4">
+                    <div class="sinopsis sinopsis-anime-1">
                         <ul>
-                            <li><span class="anime-span">Fecha de estreno:</span> 6 de julio de 2023.</li>
-                            <li><span class="anime-span">Temporada:</span> 2</li>
-                            <li><span class="anime-span">Sinopsis:</span> El pasado sale a la luz cuando los estudiantes
-                                de segundo año Satoru Gojo y
-                                Suguru Geto tienen la tarea de escoltar a la joven Riko Amanai al encuentro del Maestro
-                                Tengen. Pero cuando un no chamán intenta matarlos, su misión de proteger al "Recipiente
-                                de plasma estelar" amenaza con convertirlos en enemigos acérrimos y cimentar sus
-                                destinos: ¡uno como el chamán más fuerte del mundo y el otro como el chamán más
-                                retorcido!</li>
+                            <li><span class="anime-span">Fecha de estreno:</span> 3 de marzo de 2023</li>
+                            <li><span class="anime-span">Temporada:</span> 4 - Parte 2</li>
+                            <li><span class="anime-span">Sinopsis:</span> Eren activa el Rumbling en un intento de
+                                destruir
+                                el mundo. Innumerables Titanes inician
+                                su marcha, pisoteando todo a su paso. Mikasa, Armin, Jean, Connie, Hanae, Reiner, Annie,
+                                Pieck y el mortalmente herido Levi seran los que quedan desafían a Eren en una batalla
+                                final
+                                para detenerlo, entonces, todo parece indicar que la única alternativa que tiene el
+                                mundo
+                                para evitar la aniquilación radica en los antiguos aliados de Eren Jaeger.</li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="about-anime anime-5" id="Oshi-no-Ko">
-                    <div class="tittle-anime tittle-anime-5">
-                        <h4>Oshi no Ko</h4>
+                <div class="about-anime anime-2" id="Dr_Stone">
+                    <div class="tittle-anime tittle-anime-2">
+                        <h3>Dr. Stone - New World</h3>
                     </div>
-                    <div class="img-anime img-anime-5">
-                        <img src="./imgs/Banner-Oshi-no-ko.jpg" alt="">
+                    <div class="img-anime img-anime-2">
+                        <img src="./imgs/Banner-Dr_Stone-2.jpg" alt="">
                     </div>
-                    <div class="sinopsis sinopsis-anime-5">
+                    <div class="sinopsis sinopsis-anime-2">
                         <ul>
-                            <li><span class="anime-span">Fecha de estreno:</span> 12 de abril de 2023</li>
-                            <li><span class="anime-span">Temporada:</span> 1</li>
-                            <li><span class="anime-span">Sinopsis:</span> La chica de 16 años, Ai Hoshino, es una
-                                talentosa y hermosa idol que es
-                                adorada por sus
-                                fanáticos. Ella es la personificación de la pureza, aunque no todo es tan bonito como lo
-                                pintan,
-                                ya que se un día se presenta frente a Goro
-                                Amamiya es un ginecólogo de una zona rural y gran fanático de Ai, descubriendo que esta
-                                se
-                                encontraba embaraza de mellizos. Goro le promete un parto
-                                seguro, pero poco sabe él que un encuentro con una misteriosa figura resultaría en su
-                                muerte
-                                prematura, o eso pensaba. Al abrir sus ojos, Goro se encuentra en el regazo de su amada
-                                idol
-                                y
-                                descubre que ha renacido como el hijo recién nacido de Ai.</li>
+                            <li><span class="anime-span">Fecha de estreno:</span> 6 de abril de 2023.</li>
+                            <li><span class="anime-span">Temporada:</span> 3</li>
+                            <li><span class="anime-span">Sinopsis:</span> Tras el final de la "Stone Wars", los antiguos
+                                miembros del imperio de Tsukasa se
+                                unen al reino de la Ciencia para construir un barco capaz de surcar los mares para
+                                llegar al
+                                otro
+                                lado del mundo y buscar respuestas al misterio global de la petrificación, encontrandose
+                                con
+                                obstaculos en el camino que requeriran de nuevas soluciones cientificas realizadas a
+                                manos
+                                de Senku y compañia.</li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="about-anime anime-6" id="Record-of-Ragnarok">
-                    <div class="tittle-anime tittle-anime-6">
-                        <h4>Record of Ragnarok</h4>
+                <div class="about-anime anime-3" id="Kimetsu-no-Yaiba">
+                    <div class="tittle-anime tittle-anime-3">
+                        <h3>Kimetsu no Yaiba - Arco de la Aldea del Herrero</h3>
                     </div>
-                    <div class="img-anime img-anime-6">
-                        <img src="./imgs/Banner-Record-of-Ragnarok.jpg" alt="">
+                    <div class="img-anime img-anime-3">
+                        <img src="./imgs/Banner-Kimetsu.jpg" alt="">
                     </div>
-                    <div class="sinopsis sinopsis-anime-6">
+                    <div class="sinopsis sinopsis-anime-3">
                         <ul>
-                            <li><span class="anime-span">Fecha de estreno:</span> 26 de enero de 2023.</li>
-                            <li><span class="anime-span">Temporada:</span> 2</li>
-                            <li><span class="anime-span">Sinopsis:</span> Durante el Ragnarok, la humanidad no está
-                                obteniendo resultados favorables:
-                                guerras,
-                                contaminación, destrucción de la naturaleza; La decisión de los dioses está tomada, los
-                                humanos se extinguirán; sin embargo,queda una última esperanza para ellos: las valkirias
-                                proponen que se active
-                                una antigua ley que permite el enfrentamiento de los dioses con los humanos más
-                                poderosos,
-                                el Ragnarök.</li>
+                            <li><span class="anime-span">Fecha de estreno:</span> 9 de abril de 2023.</li>
+                            <li><span class="anime-span">Temporada:</span> 3</li>
+                            <li><span class="anime-span">Sinopsis:</span> Tras los acontecimientos de la segunda
+                                temporada,
+                                Tanjiro viaja a la Aldea de los
+                                Herreros con el fin de que estos puedan reparar la espada que necesita para seguir
+                                matando
+                                demonios para continuar con su venganza contra estos por haber matado a su familia,
+                                encontrandose el y sus compañeros con varios problemas en el camino.</li>
                         </ul>
                     </div>
-                </div>
 
-                <div class="about-anime anime-7" id="Spy-x-Family">
-                    <div class="tittle-anime tittle-anime-7">
-                        <h4>Spy x Family</h4>
+                    <div class="about-anime anime-4" id="Jujutsu-Kaisen">
+                        <div class="tittle-anime tittle-anime-4">
+                            <h3>Jujutsu Kaisen</h3>
+                        </div>
+                        <div class="img-anime img-anime-4">
+                            <img src="./imgs/Banner-Jujutsu-Kaisen.jpg" alt="">
+                        </div>
+                        <div class="sinopsis sinopsis-anime-4">
+                            <ul>
+                                <li><span class="anime-span">Fecha de estreno:</span> 6 de julio de 2023.</li>
+                                <li><span class="anime-span">Temporada:</span> 2</li>
+                                <li><span class="anime-span">Sinopsis:</span> El pasado sale a la luz cuando los
+                                    estudiantes
+                                    de segundo año Satoru Gojo y
+                                    Suguru Geto tienen la tarea de escoltar a la joven Riko Amanai al encuentro del
+                                    Maestro
+                                    Tengen. Pero cuando un no chamán intenta matarlos, su misión de proteger al
+                                    "Recipiente
+                                    de plasma estelar" amenaza con convertirlos en enemigos acérrimos y cimentar sus
+                                    destinos: ¡uno como el chamán más fuerte del mundo y el otro como el chamán más
+                                    retorcido!</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="img-anime img-anime-7">
-                        <img src="./imgs/Banner-Spy-x-Family.jpg" alt="">
+
+                    <div class="about-anime anime-5" id="Oshi-no-Ko">
+                        <div class="tittle-anime tittle-anime-5">
+                            <h3>Oshi no Ko</h3>
+                        </div>
+                        <div class="img-anime img-anime-5">
+                            <img src="./imgs/Banner-Oshi-no-ko.jpg" alt="">
+                        </div>
+                        <div class="sinopsis sinopsis-anime-5">
+                            <ul>
+                                <li><span class="anime-span">Fecha de estreno:</span> 12 de abril de 2023</li>
+                                <li><span class="anime-span">Temporada:</span> 1</li>
+                                <li><span class="anime-span">Sinopsis:</span> La chica de 16 años, Ai Hoshino, es una
+                                    talentosa y hermosa idol que es
+                                    adorada por sus
+                                    fanáticos. Ella es la personificación de la pureza, aunque no todo es tan bonito
+                                    como lo
+                                    pintan,
+                                    ya que se un día se presenta frente a Goro
+                                    Amamiya es un ginecólogo de una zona rural y gran fanático de Ai, descubriendo que
+                                    esta
+                                    se
+                                    encontraba embaraza de mellizos. Goro le promete un parto
+                                    seguro, pero poco sabe él que un encuentro con una misteriosa figura resultaría en
+                                    su
+                                    muerte
+                                    prematura, o eso pensaba. Al abrir sus ojos, Goro se encuentra en el regazo de su
+                                    amada
+                                    idol
+                                    y
+                                    descubre que ha renacido como el hijo recién nacido de Ai.</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="sinopsis sinopsis-anime-7">
-                        <ul>
-                            <li color="white"><span class="anime-span">Fecha de estreno:</span> 30 de septiembre de 2022
-                            </li>
-                            <li><span class="anime-span">Temporada:</span> 1 - Parte 2</li>
-                            <li><span class="anime-span">Sinopsis:</span> Tras recibir una misión especial,el agente
-                                secreto Twilight, quien bajo su identidad
-                                civil de Loid Forger, debe formar una familia para poder cumplirla con exito y mantener
-                                la
-                                paz entre Ostania y Westalis, 2 paises que podrian ocasionar una posible guerra. Sin
-                                embargo, Twilight desconoce que
-                                la niña que adoptó como hija (Anya Forger) posee poderes de telepatía, mientras que la
-                                mujer con la que aceptó casarse (Yor Briar) es en realidad, una asesina profesional al
-                                servicio de Ostania.</li>
-                        </ul>
+
+                    <div class="about-anime anime-6" id="Record-of-Ragnarok">
+                        <div class="tittle-anime tittle-anime-6">
+                            <h3>Record of Ragnarok</h3>
+                        </div>
+                        <div class="img-anime img-anime-6">
+                            <img src="./imgs/Banner-Record-of-Ragnarok.jpg" alt="">
+                        </div>
+                        <div class="sinopsis sinopsis-anime-6">
+                            <ul>
+                                <li><span class="anime-span">Fecha de estreno:</span> 26 de enero de 2023.</li>
+                                <li><span class="anime-span">Temporada:</span> 2</li>
+                                <li><span class="anime-span">Sinopsis:</span> Durante el Ragnarok, la humanidad no está
+                                    obteniendo resultados favorables:
+                                    guerras,
+                                    contaminación, destrucción de la naturaleza; La decisión de los dioses está tomada,
+                                    los
+                                    humanos se extinguirán; sin embargo,queda una última esperanza para ellos: las
+                                    valkirias
+                                    proponen que se active
+                                    una antigua ley que permite el enfrentamiento de los dioses con los humanos más
+                                    poderosos,
+                                    el Ragnarök.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="about-anime anime-7" id="Spy-x-Family">
+                        <div class="tittle-anime tittle-anime-7">
+                            <h3>Spy x Family</h3>
+                        </div>
+                        <div class="img-anime img-anime-7">
+                            <img src="./imgs/Banner-Spy-x-Family.jpg" alt="">
+                        </div>
+                        <div class="sinopsis sinopsis-anime-7">
+                            <ul>
+                                <li color="white"><span class="anime-span">Fecha de estreno:</span> 30 de septiembre de
+                                    2022
+                                </li>
+                                <li><span class="anime-span">Temporada:</span> 1 - Parte 2</li>
+                                <li><span class="anime-span">Sinopsis:</span> Tras recibir una misión especial,el agente
+                                    secreto Twilight, quien bajo su identidad
+                                    civil de Loid Forger, debe formar una familia para poder cumplirla con exito y
+                                    mantener
+                                    la
+                                    paz entre Ostania y Westalis, 2 paises que podrian ocasionar una posible guerra. Sin
+                                    embargo, Twilight desconoce que
+                                    la niña que adoptó como hija (Anya Forger) posee poderes de telepatía, mientras que
+                                    la
+                                    mujer con la que aceptó casarse (Yor Briar) es en realidad, una asesina profesional
+                                    al
+                                    servicio de Ostania.</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
         </section>
 
         <section class="questions" id="preguntas-frecuentes">
-            <h2 class="subtitle">Preguntas Frecuentes</h2>
-            <p class="questions-paragraph">Preguntas frecuentes acerca de la página</p>
+            <div class="questions-color">
 
-            <section class="questions-container">
-                <article class="questions-padding">
-                    <div class="questions-answers">
-                        <h3 class="questions-title">¿De donde sacan la información para realizar las listas?
-                            <span class="questions-arrow">
-                                <img src="./imgs/arrow.svg" class="questions-img" alt="">
-                            </span>
-                        </h3>
-                        <p class="questions-show">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat
-                            obcaecati iure asperiores, quisquam nulla alias, consequuntur dolorum necessitatibus,
-                            molestias ad perspiciatis quis natus deleniti ratione excepturi ipsa voluptate consequatur
-                            vero.</p>
+                <div class="tittle-questions">
+                    <h2 class="subtitle">Preguntas Frecuentes</h2>
+                    <p class="questions-paragraph">-Preguntas frecuentes acerca de la página-</p>
+                </div>
 
-                    </div>
-                </article>
+                <div class="questions-container">
+                    <article class="questions-padding">
+                        <div class="questions-answers">
+                            <h3 class="questions-title">¿De donde sacan la información para realizar las listas?
+                                <span class="questions-arrow">
+                                    <img src="./imgs/arrow.svg" class="questions-img" alt="">
+                                </span>
+                            </h3>
+                            <p class="questions-show">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat
+                                obcaecati iure asperiores, quisquam nulla alias, consequuntur dolorum necessitatibus,
+                                molestias ad perspiciatis quis natus deleniti ratione excepturi ipsa voluptate consequatur
+                                vero.</p>
 
-                <article class="questions-padding">
-                    <div class="questions-answers">
-                        <h3 class="questions-title">¿La información es confiable?
-                            <span class="questions-arrow">
-                                <img src="./imgs/arrow.svg" class="questions-img" alt="">
-                            </span>
-                        </h3>
-                        <p class="questions-show">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat
-                            obcaecati iure asperiores, quisquam nulla alias, consequuntur dolorum necessitatibus,
-                            molestias ad perspiciatis quis natus deleniti ratione excepturi ipsa voluptate consequatur
-                            vero.</p>
+                        </div>
+                    </article>
 
-                    </div>
-                </article>
+                    <article class="questions-padding">
+                        <div class="questions-answers">
+                            <h3 class="questions-title">¿La información es confiable?
+                                <span class="questions-arrow">
+                                    <img src="./imgs/arrow.svg" class="questions-img" alt="">
+                                </span>
+                            </h3>
+                            <p class="questions-show">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat
+                                obcaecati iure asperiores, quisquam nulla alias, consequuntur dolorum necessitatibus,
+                                molestias ad perspiciatis quis natus deleniti ratione excepturi ipsa voluptate consequatur
+                                vero.</p>
 
-                <article class="questions-padding">
-                    <div class="questions-answers">
-                        <h3 class="questions-title">¿Animes favoritos?
-                            <span class="questions-arrow">
-                                <img src="./imgs/arrow.svg" class="questions-img" alt="">
-                            </span>
-                        </h3>
-                        <p class="questions-show">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat
-                            obcaecati iure asperiores, quisquam nulla alias, consequuntur dolorum necessitatibus,
-                            molestias ad perspiciatis quis natus deleniti ratione excepturi ipsa voluptate consequatur
-                            vero.</p>
+                        </div>
+                    </article>
 
-                    </div>
-                </article>
+                    <article class="questions-padding">
+                        <div class="questions-answers">
+                            <h3 class="questions-title">¿Animes favoritos?
+                                <span class="questions-arrow">
+                                    <img src="./imgs/arrow.svg" class="questions-img" alt="">
+                                </span>
+                            </h3>
+                            <p class="questions-show">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat
+                                obcaecati iure asperiores, quisquam nulla alias, consequuntur dolorum necessitatibus,
+                                molestias ad perspiciatis quis natus deleniti ratione excepturi ipsa voluptate consequatur
+                                vero.</p>
 
-                <article class="questions-padding">
-                    <div class="questions-answers">
-                        <h3 class="questions-title">¿Donde ver anime con subtitulos de manera gratuita?
-                            <span class="questions-arrow">
-                                <img src="./imgs/arrow.svg" class="questions-img" alt="">
-                            </span>
-                        </h3>
-                        <p class="questions-show">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat
-                            obcaecati iure asperiores, quisquam nulla alias, consequuntur dolorum necessitatibus,
-                            molestias ad perspiciatis quis natus deleniti ratione excepturi ipsa voluptate consequatur
-                            vero.</p>
-                    </div>
-                </article>
-            </section>
+                        </div>
+                    </article>
+
+                    <article class="questions-padding">
+                        <div class="questions-answers">
+                            <h3 class="questions-title">¿Donde ver anime con subtitulos de manera gratuita?
+                                <span class="questions-arrow">
+                                    <img src="./imgs/arrow.svg" class="questions-img" alt="">
+                                </span>
+                            </h3>
+                            <p class="questions-show">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat
+                                obcaecati iure asperiores, quisquam nulla alias, consequuntur dolorum necessitatibus,
+                                molestias ad perspiciatis quis natus deleniti ratione excepturi ipsa voluptate consequatur
+                                vero.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
 
         </section>
-    </main>
 
+    </main>
 
     <footer class="footer">
         <div class="footer-container">
@@ -381,31 +461,34 @@
                         </div>
 
                         <div class="footer-copyright">
-                            <span class="footerspan">&copy; ANIME FAN PAGE <br>Todos los Derechos Reservados 2023</span>
+                            <p><span class="footerspan">&copy; ANIME FAN PAGE</span> <br>Todos los Derechos Reservados
+                                2023</p>
                         </div>
+
+
+
                     </div>
                 </div>
                 <div class="footer-col">
-                    <h4>get help</h4>
+                    <h4>Lorem</h4>
                     <ul>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">shipping</a></li>
-                        <li><a href="#">returns</a></li>
-                        <li><a href="#">order status</a></li>
-                        <li><a href="#">payment options</a></li>
+                        <li><a href="#">lorem</a></li>
+                        <li><a href="#">lorem</a></li>
+                        <li><a href="#">lorem</a></li>
+                        <li><a href="#">lorem</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>online shop</h4>
+                    <h4>Lorem</h4>
                     <ul>
-                        <li><a href="#">watch</a></li>
-                        <li><a href="#">bag</a></li>
-                        <li><a href="#">shoes</a></li>
-                        <li><a href="#">dress</a></li>
+                        <li><a href="#">lorem</a></li>
+                        <li><a href="#">lorem</a></li>
+                        <li><a href="#">lorem</a></li>
+                        <li><a href="#">lorem</a></li>
                     </ul>
                 </div>
                 <div class="footer-col footer-social">
-                    <h4>follow us</h4>
+                    <h4>Siguenos en nuestras redes</h4>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
@@ -415,139 +498,11 @@
             </div>
         </div>
     </footer>
-
-
-
-
-    <!--
-    <footer>
-        <section class="footer-container">
-            <div class="first-part-footer">
-                <div class="footer-img">
-                    <a href="#"><img src="./imgs/Logo.png" alt=""></a>
-                </div>
-
-                <div class="footer-copyright">
-                    <span class="footerspan">&copy; ANIME FAN PAGE <br>Todos los Derechos Reservados 2023</span>
-                </div>
-            </div>
-
-            <div class="footer-text">
-                <div class="footer-principal-tittle">
-                    <h1>Links de interes</h1>
-                </div>
-
-                <div class="footer-links">
-                    <div class="footer-link">
-                        <div class="footer-tittle footer-tittle-1">
-                            <h2>Lorem</h2>
-                        </div>
-                        <ul>
-                            <li><a href="#">lorem</a></li>
-                            <li><a href="#">lorem</a></li>
-                            <li><a href="#">lorem</a></li>
-                            <li><a href="#">lorem</a></li>
-                            <li><a href="#">lorem</a></li>
-
-                        </ul>
-                    </div>
-
-                    <div class="footer-link">
-                        <div class="footer-tittle footer-tittle-2">
-                            <h2>Lorem</h2>
-                        </div>
-                        <ul>
-                            <li><a href="#">lorem</a></li>
-                            <li><a href="#">lorem</a></li>
-                            <li><a href="#">lorem</a></li>
-                            <li><a href="#">lorem</a></li>
-                            <li><a href="#">lorem</a></li>
-
-                        </ul>
-                    </div>
-
-                    <div class="footer-link">
-                        <div class="footer-tittle footer-tittle-3">
-                            <h2>Lorem</h2>
-                        </div>
-                        <ul>
-                            <li><a href="#">lorem</a></li>
-                            <li><a href="#">lorem</a></li>
-                            <li><a href="#">lorem</a></li>
-                            <li><a href="#">lorem</a></li>
-                            <li><a href="#">lorem</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="footer-link">
-                        <div class="footer-tittle footer-tittle-1">
-                            <h2>Lorem</h2>
-                        </div>
-                        <ul>
-                            <li><a href="#">lorem</a></li>
-                            <li><a href="#">lorem</a></li>
-                            <li><a href="#">lorem</a></li>
-                            <li><a href="#">lorem</a></li>
-                            <li><a href="#">lorem</a></li>
-
-                        </ul>
-                    </div>
-
-                    <div class="footer-link">
-                        <div class="footer-tittle footer-tittle-1">
-                            <h2>Lorem</h2>
-                        </div>
-                        <ul>
-                            <li><a href="#">lorem</a></li>
-                            <li><a href="#">lorem</a></li>
-                            <li><a href="#">lorem</a></li>
-                            <li><a href="#">lorem</a></li>
-                            <li><a href="#">lorem</a></li>
-
-                        </ul>
-                    </div>
-
-                    <div class="footer-link">
-                        <div class="footer-tittle footer-tittle-1">
-                            <h2>Lorem</h2>
-                        </div>
-                        <ul>
-                            <li><a href="#">lorem</a></li>
-                            <li><a href="#">lorem</a></li>
-                            <li><a href="#">lorem</a></li>
-                            <li><a href="#">lorem</a></li>
-                            <li><a href="#">lorem</a></li>
-
-                        </ul>
-                    </div>
-
-
-                </div>
-            </div>
-
-            <div class="footer-last-part">
-                <div class="social-text">
-                    <h3>Siguenos en nuestras redes</h3>
-                </div>
-                <div class="social-media">
-                    <a href="#" target="_blank" class="socialmedia-link">
-                        <i class="bx bxl-facebook"></i>
-                    </a>
-                    <a href="#" target="_blank" class="socialmedia-link">
-                        <i class="bx bxl-instagram-alt"></i>
-                    </a>
-                    <a href="#" target="_blank" class="socialmedia-link">
-                        <i class="bx bxl-twitter"></i>
-                    </a>
-                </div>
-            </div>
-
-        </section>
-    </footer>-->
-
-
     <script src="questions.js"></script>
     <script src="navbar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>

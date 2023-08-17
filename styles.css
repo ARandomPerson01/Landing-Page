@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Tektur:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:wght@400;500;600;700;800&family=Teko:wght@300;400;500;600;700&family=Tektur:wght@400;500;600;700;800;900&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -15,7 +15,7 @@ html{
 body{
     margin: 0;
     font-family: "Poppins", sans-serif;
-    background-color: gainsboro; 
+    background: #e2e2e2;
   }
   
   .grid {
@@ -40,167 +40,8 @@ a{
     font-weight: bold;
 }
 
+
 /*HEADER*/
-/*
-.header{
-    width: 100%;
-    max-height: 5rem;
-    background: #fff;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    height: 5rem;   
-}
-
-.nav-bar{
-    max-width: 1300px;
-    height: 5rem;
-    margin: auto;
-    align-items: center;
-    background: white;
-    text-align: center;
-
-}
-
-.nav-menu{
-    display: flex;
-    align-items: center;
-    margin: auto;
-    width: 100%;
-}
-
-.nav-menu ul{
-    display: flex;
-    margin: auto;
-    justify-content: space-around;
-
-}
-
-.nav-menu li{
-    font-size: 1.3rem;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-.nav-elements-img{
-    max-width: 18%;
-}
-
-.nav-elements-img img{
-    max-width: 100%;
-}
-
-.nav-links{
-    font-size: 1.2rem;
-}
-
-.nav-links:hover{
-    color: #00000078;
-    border-bottom: 3px solid #00000078;
-}*/
-
-/*HEADER -2*/
-/*
-header{
-    background: #fff;
-    position: relative;
-    padding: 0 2rem;
-}
-
-header a{
-    color: #000;
-}
-
-header a:hover{
-    color: rgba(0, 0, 0, 0.596);
-}
-
-.navbar{
-    width: 100%;
-    height: 60px;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.navbar .logo a{
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.navbar .links{
-    display: flex;
-    gap: 2rem;
-}
-
-.navbar .toogle-btn{
-    color: #000;
-    font-size: 1.5rem;
-    cursor: pointer;
-    display: none;
-}
-
-.action_btn{
-    background-color: orange;
-    color: #fff;
-    padding: .5rem 1rem;
-    border: none;
-    outline: none;
-    border-radius: 20px;
-    font-size: .8rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: scale .2 ease;
-}
-
-.action_btn:hover{
-    scale: 1.05;
-    color: #fff;
-}
-
-.action_btn:active{
-    scale: .95;
-}
-
-/*DROPDOWN-MENU*/
-/*.dropdown_menu{
-    display: none;
-    position: absolute;
-    right: 2rem;
-    top: 60px;
-    height: 0;
-    width: 300px;
-    background: rgba(255, 255, 255, .1);
-    backdrop-filter: blur(15px);
-    border-radius: 10px;
-    overflow: hidden;
-    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    z-index: 1;
-}
-
-.dropdown_menu.open{
-    height: 240px;
-}
-
-.dropdown_menu li{
-    padding: .7rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.dropdown_menu .action_btn{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}/*
-
-
-/*HEADER-3*/
-
 .header {
     width: 100%;
     background: #fff;
@@ -208,12 +49,15 @@ header a:hover{
     top: 0;
     left: 0;
     z-index: 100;
+    max-height: 10vh;
+    display: block;
+    box-shadow: 0px 15px 10px -15px #111;
   }
   
   .nav {
     margin: auto;
     max-width: 1200px;
-    height: 3.5rem;
+    height: 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -224,7 +68,8 @@ header a:hover{
     align-items: center;
     column-gap: 0.5rem;
     font-weight: 500;
-    width: 20%;
+    width: 16%;
+    margin-left: 10px;
   }
   
   .navL-img {
@@ -235,14 +80,13 @@ header a:hover{
     color: #000;
   }
   
+
   .navToggle {
     font-size: 1.25rem;
     cursor: pointer;
   }
-
-
-
   
+  /*NAVBAR RESPONSIVE*/
   @media (max-width: 767px) {
     .navM {
       position: fixed;
@@ -279,7 +123,8 @@ header a:hover{
   }
   
   .navLink:hover {
-    color: #000000cf;
+    color: #000000b9;
+    text-transform: calc(50%);
   }
   
   /* Show menu */
@@ -328,44 +173,138 @@ header a:hover{
         font-weight: initial;
     }
   }
-  
+
 
 /*COVER*/
-.information-cover{
-    max-width: 1300px;
+.cover{
+    width: 100%;
+    padding: 25px;
     display: flex;
     align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: #fff;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.1)
+    )
+    ,url("imgs/Background-anime.gif");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    z-index: 12;
+}
+
+.cover h1{
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: 'Jost', 'sans-serif';
+}
+
+.cover p{
+    font-size: 1.2rem;
+    font-family: 'Poppins', 'sans-serif';
+}
+
+
+
+/*SLIDER SECTION*/
+.tittle-carrousel{
+    width: 100%;
+    padding: 80px 0 10px 0;
+    background: #ffffff80;
+}
+
+.tittle-carrousel h2{
+    font-weight: 700;
+    font-size: 2rem;
+    color: #000;
+}
+
+.carrousel-inner{
+    margin: auto;
+    
+}
+
+.container-news{
+    max-width: 100%;
+    justify-content: center;
     margin: auto;
 }
 
-.information-text{
-    max-width: 30%;
+.carousel-item{
+    height: 100vh;
 }
-
-.information-text h1{
-    text-align: left;
-}
-
-.information-text p{
-    text-align: left;
-}
-
-.img-cover{
+.carrusel-item img{
+    -webkit-backdrop-size: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     width: 100%;
+    filter: brightness(80%);
 }
 
-.img-cover img{
+.carousel-control-next, .carousel-control-prev{
+    color: #000;
+}
+
+.carousel-control-next-icon:hover, .carousel-control-prev-icon:hover{
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 25%;
+}
+
+.active:hover{
+    color: #000;
+}
+
+.box{
+    background: rgba(0,0,0,.5);
     width: 100%;
-    clip-path: inset(22% 0 34% 0);
+    padding: 25px;
+}
+
+.box h3{
+    color: #fff;
+    font-weight: bolder;
+    font-family: 'Jost', 'sans-serif';
+    font-size: 2.4rem;
+    text-transform: uppercase;
+}
+
+.box h4{
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Jost', 'sans-serif';
+    font-size: 1.8rem;
+
+}
+
+.box p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2rem;
+}
+
+.box a{
+    color: #fff;
+}
+
+.box a:hover{
+    color: #ffffffb7;
 }
 
 /*PRINCIPAL TITTLE*/
 .principal-tittle{
-    max-width: 100%;
-    margin: auto;
-    background-color: #fff;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    background-color: #ffffff80;
+    padding: 80px 0 10px 0;
+}
+
+.principal-tittle h1{
+    font-weight: bolder;
+    font-size: 2.3rem;
 }
 
 /*GALERRY*/
@@ -378,7 +317,7 @@ header a:hover{
 
 .container-gallery{
     display: flex;
-    width: 1450px;
+    width: 95%;
     height: 740px;
     margin: auto;
 }
@@ -403,7 +342,7 @@ header a:hover{
 }
 
 .img-gallery:hover{
-    cursor: crosshair;
+    cursor: pointer;
     width: 500px;
     opacity: 1;
     filter: contrast(120%);
@@ -411,14 +350,13 @@ header a:hover{
 
 /*MEDIUM TITTLE*/
 .medium-tittle{
-    background: #fff;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    background: #ffffff80;
+    padding: 80px 0 10px 0;
 }
 
-.medium-tittle h3{
+.medium-tittle h2{
     font-size: 2rem;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 /*ANIME SINOPSIS*/
@@ -435,12 +373,15 @@ header a:hover{
     margin: 20px 0 20px 0;
 }
 
-.tittle-anime h4{
+.tittle-anime h3{
     font-family: 'Tektur', sans-serif;
     text-align: left;
-    font-size: 2rem;
+    font-size: 1.8rem;
     max-width: 100%;
     font-weight: bold;
+    display: inline-block; 
+    background: orange;
+    padding: 10px 20px;
 }
 
 .img-anime{
@@ -459,6 +400,7 @@ header a:hover{
     list-style: square;
     margin-left: 20px;
     margin-top: 10px;
+    margin-bottom: 16px;
     font-size: 1.05rem;
 }
 
@@ -473,20 +415,33 @@ header a:hover{
 /*QUESTIONS*/
 .questions{
     width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
     overflow: hidden;
     margin: auto;
     margin-top: 100px;
     text-align: center;
-
+    padding: 80px 0 10px 0;
+    background: #ffffff80;
 }
 
+.questions-color{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.subtitle{
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.questions-paragraph{
+    font-size: 1.2rem;
+}
 
 .questions-container{
     display: grid;
     gap: 2em;
-    padding-top: 50px;
+    padding-top: 40px;
     padding-bottom: 100px;
 }
 
@@ -495,10 +450,14 @@ header a:hover{
     transition: .3s;
     border: 2px solid #000;
     border-radius: 6px;
+    height: 70px;
+    overflow: hidden;
 }
 
 .questions-padding--add{
     padding-bottom: 30px;
+    height: 150px;
+    transition: .3s;
 }
 
 .questions-answers{
@@ -510,10 +469,11 @@ header a:hover{
     text-align: left;
     display: flex;
     font-size: 20px;
-    padding: 30px 0 30px;
+    padding: 26px 0 10px;
     cursor: pointer;
     color: #000;
     justify-content: space-between;
+    font-weight: 600;
 }
 
 .questions-arrow{
@@ -552,16 +512,19 @@ header a:hover{
 
 /*FOOTER*/
 .footer-container{
-	max-width: 1170px;
+	max-width: 1270px;
 	margin:auto;
 }
+
 .row{
 	display: flex;
 	flex-wrap: wrap;
 }
+
 ul{
 	list-style: none;
 }
+
 .footer{
 	background-color: #24262b;
     padding: 70px 0;
@@ -580,6 +543,20 @@ ul{
    padding: 0 15px;
 }
 
+.footer-copyright{
+    width: 100%;
+    text-align: center;
+}
+
+.footer-copyright p{
+    color: #fff;
+}
+
+.footerspan{
+    color: #fff;
+    font-weight: 700;
+}
+
 .footer-social{
     text-align: center;
 }
@@ -591,6 +568,7 @@ ul{
 	font-weight: 500;
 	position: relative;
 }
+
 .footer-col h4::before{
 	content: '';
 	position: absolute;
@@ -601,9 +579,11 @@ ul{
 	box-sizing: border-box;
 	width: 50px;
 }
+
 .footer-col ul li:not(:last-child){
 	margin-bottom: 10px;
 }
+
 .footer-col ul li a{
 	font-size: 16px;
 	color: #ffffff;
@@ -613,10 +593,12 @@ ul{
 	display: block;
 	transition: all 0.3s ease;
 }
+
 .footer-col ul li a:hover{
 	color: #ffffff;
 	padding-left: 8px;
 }
+
 .footer-col .social-links a{
 	display: inline-block;
 	height: 40px;
@@ -629,29 +611,11 @@ ul{
 	color: #ffffff;
 	transition: all 0.5s ease;
 }
+
 .footer-col .social-links a:hover{
 	color: #24262b;
 	background-color: #ffffff;
 }
-
-/*HEADER - RESPONSIVE*/
-/*
-
-@media(max-width: 992px){
-    .navbar .links, .navbar .action_btn{
-        display: none;
-    }
-
-    .navbar .toogle-btn{
-        display: block;
-    }
-
-    .dropdown_menu{
-        display: block;
-    }
-
-}*/
-
 
 /*FOOTER - RESPONSIVE*/
 @media(max-width: 767px){
@@ -664,4 +628,100 @@ ul{
   .footer-col{
     width: 100%;
 }
+}
+
+/*RESPONSIVE*/
+@media(max-width: 574px){
+    /*Nav-bar*/
+    .header{
+        width: 100%;
+    }
+
+    .nav{
+        width: 96%;
+        justify-content: space-between;
+    }
+
+    .navL-img{
+        max-width: 100%;
+        border-left: 10px;
+    }
+
+    .navLink{
+        font-size: .96rem;
+    }
+
+    /*Cover*/
+    .cover{
+        max-height: 86vh;
+    }
+
+    /*Slider*/
+
+    .container-news{
+        background: red;
+        height: 500px;
+    }
+
+    .tittle-carrousel h2{
+        font-size: 2rem;
+    }
+
+
+    .box h3{
+        font-size: 2rem;
+    }
+
+    .box h4{
+        font-size: 1.6rem;
+    }
+
+    .box p{
+        display: none;
+    }
+
+    .carousel-indicators{
+
+    }
+
+    .carousel-item{
+    }
+
+    .carousel-item img{
+        height: 540px;
+    }
+
+    /*Destacados*/
+    .gallery{
+        margin-top: 500px;
+    }
+
+    .img-gallery:hover{
+        cursor: pointer;
+        width: 300px;
+        opacity: 1;
+        filter: contrast(120%);
+    }
+    
+    /*Sinopsis*/
+    .about-anime{
+        width: 90%;
+    }
+
+    .tittle-anime h3{
+        font-size: 1.6rem;
+        margin: auto;
+    }
+
+    .img-anime{
+        width: 100%;
+        overflow: hidden;
+        left: -10px;
+
+    }
+
+
+    .sinopsis li, .anime-span{
+        font-size: .96rem;
+    }
 }
