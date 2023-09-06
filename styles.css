@@ -40,8 +40,8 @@ a{
     font-weight: bold;
 }
 
-
 /*HEADER*/
+
 .header {
     width: 100%;
     background: #fff;
@@ -58,6 +58,7 @@ a{
     margin: auto;
     max-width: 1200px;
     height: 2rem;
+    height: 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -70,6 +71,8 @@ a{
     font-weight: 500;
     width: 16%;
     margin-left: 10px;
+    width: 16%;
+    margin-left: 10px;
   }
   
   .navL-img {
@@ -80,6 +83,7 @@ a{
     color: #000;
   }
   
+
 
   .navToggle {
     font-size: 1.25rem;
@@ -123,6 +127,8 @@ a{
   }
   
   .navLink:hover {
+    color: #000000b9;
+    text-transform: calc(50%);
     color: #000000b9;
     text-transform: calc(50%);
   }
@@ -343,6 +349,7 @@ a{
 
 .img-gallery:hover{
     cursor: pointer;
+    cursor: pointer;
     width: 500px;
     opacity: 1;
     filter: contrast(120%);
@@ -356,6 +363,7 @@ a{
 
 .medium-tittle h2{
     font-size: 2rem;
+    font-weight: bolder;
     font-weight: bolder;
 }
 
@@ -373,12 +381,17 @@ a{
     margin: 20px 0 20px 0;
 }
 
+
 .tittle-anime h3{
     font-family: 'Tektur', sans-serif;
     text-align: left;
     font-size: 1.8rem;
+    font-size: 1.8rem;
     max-width: 100%;
     font-weight: bold;
+    display: inline-block; 
+    background: orange;
+    padding: 10px 20px;
     display: inline-block; 
     background: orange;
     padding: 10px 20px;
@@ -401,6 +414,7 @@ a{
     margin-left: 20px;
     margin-top: 10px;
     margin-bottom: 16px;
+    margin-bottom: 16px;
     font-size: 1.05rem;
 }
 
@@ -418,15 +432,12 @@ a{
     overflow: hidden;
     margin: auto;
     margin-top: 100px;
-    text-align: center;
-    padding: 80px 0 10px 0;
-    background: #ffffff80;
-}
+    text-align: center;}
 
-.questions-color{
-    max-width: 1200px;
-    margin: auto;
-}
+.subtitle{
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 2rem;}
 
 .subtitle{
     font-weight: bolder;
@@ -441,6 +452,7 @@ a{
 .questions-container{
     display: grid;
     gap: 2em;
+    padding-top: 40px;
     padding-top: 40px;
     padding-bottom: 100px;
 }
@@ -470,9 +482,11 @@ a{
     display: flex;
     font-size: 20px;
     padding: 26px 0 10px;
+    padding: 26px 0 10px;
     cursor: pointer;
     color: #000;
     justify-content: space-between;
+    font-weight: 600;
     font-weight: 600;
 }
 
@@ -497,6 +511,7 @@ a{
     text-align: left;
     height: 0;
     transition: height .3s;
+
 }
 
 .questions-img{
@@ -513,17 +528,21 @@ a{
 /*FOOTER*/
 .footer-container{
 	max-width: 1270px;
+	max-width: 1270px;
 	margin:auto;
 }
+
 
 .row{
 	display: flex;
 	flex-wrap: wrap;
 }
 
+
 ul{
 	list-style: none;
 }
+
 
 .footer{
 	background-color: #24262b;
@@ -557,6 +576,20 @@ ul{
     font-weight: 700;
 }
 
+.footer-copyright{
+    width: 100%;
+    text-align: center;
+}
+
+.footer-copyright p{
+    color: #fff;
+}
+
+.footerspan{
+    color: #fff;
+    font-weight: 700;
+}
+
 .footer-social{
     text-align: center;
 }
@@ -569,6 +602,7 @@ ul{
 	position: relative;
 }
 
+
 .footer-col h4::before{
 	content: '';
 	position: absolute;
@@ -580,9 +614,11 @@ ul{
 	width: 50px;
 }
 
+
 .footer-col ul li:not(:last-child){
 	margin-bottom: 10px;
 }
+
 
 .footer-col ul li a{
 	font-size: 16px;
@@ -594,10 +630,12 @@ ul{
 	transition: all 0.3s ease;
 }
 
+
 .footer-col ul li a:hover{
 	color: #ffffff;
 	padding-left: 8px;
 }
+
 
 .footer-col .social-links a{
 	display: inline-block;
@@ -611,6 +649,7 @@ ul{
 	color: #ffffff;
 	transition: all 0.5s ease;
 }
+
 
 .footer-col .social-links a:hover{
 	color: #24262b;
@@ -680,13 +719,6 @@ ul{
         display: none;
     }
 
-    .carousel-indicators{
-
-    }
-
-    .carousel-item{
-    }
-
     .carousel-item img{
         height: 540px;
     }
@@ -719,7 +751,6 @@ ul{
         left: -10px;
 
     }
-
 
     .sinopsis li, .anime-span{
         font-size: .96rem;
