@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mundo Anime</title>
-    <title>Mundo Anime</title>
     <link rel="shortcut icon" href="imgs/Narutomaki.png" type="image/x-icon" />
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
@@ -15,29 +14,23 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <header class="header" id="header">
         <nav class="nav">
-            <a href="#" class="navL">
-                <img src="./imgs/Logo.png" alt="" class="navL-img" />
-            </a>
-
+            <a href="#" class="navL"><img src="./imgs/Logo.png" alt="" class="navL-img" /></a>
             <div class="navM" id="nav-menu">
                 <ul class="navList">
                     <li class="navItem">
-                        <a href="#home" class="navLink active-link"> Inicio </a>
-                    </li>
-                    <li class="navItem">
-                        <a href="#ultimas-noticias" class="navLink">Últimas noticias</a>
+                        <a href="#home" class="navLink">Inicio</a>
                     </li>
                     <li class="navItem">
                         <a href="#destacados-del-año" class="navLink"> Destacados del Año </a>
+                    </li>
+                    <li class="navItem">
+                        <a href="#sinopsis-anime" class="navLink">Sinopsis</a>
                     </li>
                     <li class="navItem">
                         <a href="#preguntas-frecuentes" class="navLink"> Preguntas Frecuentes </a>
@@ -48,27 +41,15 @@
                     <i class="bx bx-x"></i>
                 </div>
             </div>
-
             <div class="navToggle" id="nav-toggle">
                 <i class="fa-solid fa-bars"></i>
             </div>
         </nav>
     </header>
-    </header>
-
 
     <main class="main">
-        <section class="cover" id="home">
-            <h1>MUNDO ANIME</h1>
-            <p>La Página donde encontraras las últimas novedades de este mundo animado</p>
-        </section>
-
-        <section class="container-news" id="ultimas-noticias">
-            <div class="tittle-carrousel">
-                <h2>ÚLTIMAS NOTICIAS</h2>
-            </div>
-
-            <div id="carouselExampleCaptions" class="carousel slide carrousel-fade" data-bs-ride="carousel">
+        <section class="container-news" id="">
+            <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></button>
@@ -80,10 +61,23 @@
                         aria-label="Slide 4"></button>
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
                         aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
+                        aria-label="Slide 6"></button>
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="./imgs/Slider-Goku.jpg" class="d-block w-100 img-carrousel img-carrousel-1" alt="...">
+                        <img src="./imgs/Background-anime.gif" class="d-block w-100 img-carousel img-carousel-1"
+                            alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <div class="box">
+                                <h3 class="principal-title-carrousel">MUNDO ANIME</h3>
+                                <h4 class="paragraph-carrousel">La Página donde encontraras las últimas novedades de
+                                    este mundo animado</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./imgs/Slider-Goku.jpg" class="d-block w-100 img-carousel img-carousel-2" alt="...">
                         <div class="carousel-caption d-none d-md-block">
                             <div class="box">
                                 <h3>Dragon Ball Super</h3>
@@ -97,7 +91,7 @@
                     </div>
                     <div class="carousel-item">
                         <img src="./imgs/Slider-One-Piece-Gear-5.webp"
-                            class="d-block w-100 img-carrousel img-carrousel-2" alt="...">
+                            class="d-block w-100 img-carrousel img-carrousel-3" alt="...">
                         <div class="carousel-caption d-none d-md-block">
                             <div class="box">
                                 <h3>One Piece</h3>
@@ -111,7 +105,7 @@
                     </div>
                     <div class="carousel-item">
                         <img src="./imgs/Slider-Naruto-Shippuden.webp"
-                            class="d-block w-100 img-carrousel img-carrousel-3" alt="...">
+                            class="d-block w-100 img-carrousel img-carrousel-4" alt="...">
                         <div class="carousel-caption d-none d-md-block">
                             <div class="box">
                                 <h3>Naruto Shippuden</h3>
@@ -124,7 +118,7 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="./imgs/Slider-Eren-Jaeger.webp" class="d-block w-100 img-carrousel img-carrousel-4"
+                        <img src="./imgs/Slider-Eren-Jaeger.webp" class="d-block w-100 img-carrousel img-carrousel-5"
                             alt="...">
                         <div class="carousel-caption d-none d-md-block">
                             <div class="box">
@@ -138,7 +132,7 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="./imgs/Slider-Tanjiro-Kamado.jpg" class="d-block w-100 img-carrousel img-carrousel-5"
+                        <img src="./imgs/Slider-Tanjiro-Kamado.jpg" class="d-block w-100 img-carrousel img-carrousel-6"
                             alt="...">
                         <div class="carousel-caption d-none d-md-block">
                             <div class="box">
@@ -166,7 +160,7 @@
         </section>
 
         <section class="container-images" id="destacados-del-año">
-            <div class="principal-tittle">
+            <div class="principal-title">
                 <h1>ANIMES DESTACADOS DEL AÑO</h1>
             </div>
 
@@ -188,36 +182,14 @@
                             src="imgs/Cover-Spy-x-Family.jpg" alt=""></a>
                 </div>
             </div>
-            <div class="gallery">
-                <div class="container-gallery">
-                    <a href="#Shingeki-no-Kyojin" class="img-gallery"><img class="img-gallery gallery-img img-1"
-                            src="imgs/Cover-Shingeki.png" alt=""></a>
-                    <a href="#Dr_Stone" class="img-gallery"><img class="img-gallery gallery-img img-2"
-                            src="imgs/Cover-Dr_Stone.jpg" alt=""></a>
-                    <a href="#Kimetsu-no-Yaiba" class="img-gallery"><img class="img-gallery gallery-img img-3"
-                            src="imgs/Cover-Kimetsu.jpg" alt=""></a>
-                    <a href="#Jujutsu-Kaisen" class="img-gallery"><img class="img-gallery gallery-img img-4"
-                            src="imgs/Cover-Jujutsu-Kaisen.jpg" alt=""></a>
-                    <a href="#Oshi-no-Ko" class="img-gallery"><img class="img-gallery gallery-img img-5"
-                            src="imgs/Cover-Oshi-no-Ko.jpg" alt=""></a>
-                    <a href="#Record-of-Ragnarok" class="img-gallery"><img class="img-gallery gallery-img img-6"
-                            src="imgs/Cover-Record-of-Ragnarok.jpg" alt=""></a>
-                    <a href="#Spy-x-Family" class="img-gallery"><img class="img-gallery gallery-img img-7"
-                            src="imgs/Cover-Spy-x-Family.jpg" alt=""></a>
-                </div>
-            </div>
         </section>
 
-        <section class="container-sinopsis">
-
-
-        <section class="container-sinopsis">
+        <section class="container-sinopsis" id="sinopsis-anime">
             <div class="medium-tittle">
-                <h2>¿DE QUÉ TRATA CADA TÍTULO?</h2>
+                <h2>SINOPSIS DE LOS TÍTULOS DESTACADOS</h2>
             </div>
-
-            <div class="anime-sinopsis">
-                <div class="about-anime anime-1" id="Shingeki-no-Kyojin">
+            <div class="anime-sinopsis sinopsis-container" id="Shingeki-no-Kyojin">
+                <div class="about-anime anime-1" >
                     <div class="tittle-anime tittle-anime-1">
                         <h3>Shingeki no Kyojin - The Final Season (Parte 2)</h3>
                     </div>
@@ -231,8 +203,10 @@
                             <li><span class="anime-span">Sinopsis:</span> Eren activa el Rumbling en un intento de
                                 destruir
                                 el mundo. Innumerables Titanes inician
-                                su marcha, pisoteando todo a su paso. Mikasa, Armin, Jean, Connie, Hanae, Reiner, Annie,
-                                Pieck y el mortalmente herido Levi seran los que quedan desafían a Eren en una batalla
+                                su marcha, pisoteando todo a su paso. Mikasa, Armin, Jean, Connie, Hanae, Reiner,
+                                Annie,
+                                Pieck y el mortalmente herido Levi seran los que quedan desafían a Eren en una
+                                batalla
                                 final
                                 para detenerlo, entonces, todo parece indicar que la única alternativa que tiene el
                                 mundo
@@ -252,12 +226,14 @@
                         <ul>
                             <li><span class="anime-span">Fecha de estreno:</span> 6 de abril de 2023.</li>
                             <li><span class="anime-span">Temporada:</span> 3</li>
-                            <li><span class="anime-span">Sinopsis:</span> Tras el final de la "Stone Wars", los antiguos
+                            <li><span class="anime-span">Sinopsis:</span> Tras el final de la "Stone Wars", los
+                                antiguos
                                 miembros del imperio de Tsukasa se
                                 unen al reino de la Ciencia para construir un barco capaz de surcar los mares para
                                 llegar al
                                 otro
-                                lado del mundo y buscar respuestas al misterio global de la petrificación, encontrandose
+                                lado del mundo y buscar respuestas al misterio global de la petrificación,
+                                encontrandose
                                 con
                                 obstaculos en el camino que requeriran de nuevas soluciones cientificas realizadas a
                                 manos
@@ -286,129 +262,116 @@
                                 encontrandose el y sus compañeros con varios problemas en el camino.</li>
                         </ul>
                     </div>
-
-                    <div class="about-anime anime-4" id="Jujutsu-Kaisen">
-                        <div class="tittle-anime tittle-anime-4">
-                            <h3>Jujutsu Kaisen</h3>
-                        </div>
-                        <div class="img-anime img-anime-4">
-                            <img src="./imgs/Banner-Jujutsu-Kaisen.jpg" alt="">
-                        </div>
-                        <div class="sinopsis sinopsis-anime-4">
-                            <ul>
-                                <li><span class="anime-span">Fecha de estreno:</span> 6 de julio de 2023.</li>
-                                <li><span class="anime-span">Temporada:</span> 2</li>
-                                <li><span class="anime-span">Sinopsis:</span> El pasado sale a la luz cuando los
-                                    estudiantes
-                                    de segundo año Satoru Gojo y
-                                    Suguru Geto tienen la tarea de escoltar a la joven Riko Amanai al encuentro del
-                                    Maestro
-                                    Tengen. Pero cuando un no chamán intenta matarlos, su misión de proteger al
-                                    "Recipiente
-                                    de plasma estelar" amenaza con convertirlos en enemigos acérrimos y cimentar sus
-                                    destinos: ¡uno como el chamán más fuerte del mundo y el otro como el chamán más
-                                    retorcido!</li>
-                            </ul>
-                        </div>
+                </div>
+                <div class="about-anime anime-4" id="Jujutsu-Kaisen">
+                    <div class="tittle-anime tittle-anime-4">
+                        <h3>Jujutsu Kaisen</h3>
                     </div>
-
-                    <div class="about-anime anime-5" id="Oshi-no-Ko">
-                        <div class="tittle-anime tittle-anime-5">
-                            <h3>Oshi no Ko</h3>
-                        </div>
-                        <div class="img-anime img-anime-5">
-                            <img src="./imgs/Banner-Oshi-no-ko.jpg" alt="">
-                        </div>
-                        <div class="sinopsis sinopsis-anime-5">
-                            <ul>
-                                <li><span class="anime-span">Fecha de estreno:</span> 12 de abril de 2023</li>
-                                <li><span class="anime-span">Temporada:</span> 1</li>
-                                <li><span class="anime-span">Sinopsis:</span> La chica de 16 años, Ai Hoshino, es una
-                                    talentosa y hermosa idol que es
-                                    adorada por sus
-                                    fanáticos. Ella es la personificación de la pureza, aunque no todo es tan bonito
-                                    como lo
-                                    pintan,
-                                    ya que se un día se presenta frente a Goro
-                                    Amamiya es un ginecólogo de una zona rural y gran fanático de Ai, descubriendo que
-                                    esta
-                                    se
-                                    encontraba embaraza de mellizos. Goro le promete un parto
-                                    seguro, pero poco sabe él que un encuentro con una misteriosa figura resultaría en
-                                    su
-                                    muerte
-                                    prematura, o eso pensaba. Al abrir sus ojos, Goro se encuentra en el regazo de su
-                                    amada
-                                    idol
-                                    y
-                                    descubre que ha renacido como el hijo recién nacido de Ai.</li>
-                            </ul>
-                        </div>
+                    <div class="img-anime img-anime-4">
+                        <img src="./imgs/Banner-Jujutsu-Kaisen.jpg" alt="">
                     </div>
-
-                    <div class="about-anime anime-6" id="Record-of-Ragnarok">
-                        <div class="tittle-anime tittle-anime-6">
-                            <h3>Record of Ragnarok</h3>
-                        </div>
-                        <div class="img-anime img-anime-6">
-                            <img src="./imgs/Banner-Record-of-Ragnarok.jpg" alt="">
-                        </div>
-                        <div class="sinopsis sinopsis-anime-6">
-                            <ul>
-                                <li><span class="anime-span">Fecha de estreno:</span> 26 de enero de 2023.</li>
-                                <li><span class="anime-span">Temporada:</span> 2</li>
-                                <li><span class="anime-span">Sinopsis:</span> Durante el Ragnarok, la humanidad no está
-                                    obteniendo resultados favorables:
-                                    guerras,
-                                    contaminación, destrucción de la naturaleza; La decisión de los dioses está tomada,
-                                    los
-                                    humanos se extinguirán; sin embargo,queda una última esperanza para ellos: las
-                                    valkirias
-                                    proponen que se active
-                                    una antigua ley que permite el enfrentamiento de los dioses con los humanos más
-                                    poderosos,
-                                    el Ragnarök.</li>
-                            </ul>
-                        </div>
+                    <div class="sinopsis sinopsis-anime-4">
+                        <ul>
+                            <li><span class="anime-span">Fecha de estreno:</span> 6 de julio de 2023.</li>
+                            <li><span class="anime-span">Temporada:</span> 2</li>
+                            <li><span class="anime-span">Sinopsis:</span> El pasado sale a la luz cuando los
+                                estudiantes
+                                de segundo año Satoru Gojo y
+                                Suguru Geto tienen la tarea de escoltar a la joven Riko Amanai al encuentro del
+                                Maestro
+                                Tengen. Pero cuando un no chamán intenta matarlos, su misión de proteger al
+                                "Recipiente
+                                de plasma estelar" amenaza con convertirlos en enemigos acérrimos y cimentar sus
+                                destinos: ¡uno como el chamán más fuerte del mundo y el otro como el chamán más
+                                retorcido!</li>
+                        </ul>
                     </div>
+                </div>
+                <div class="about-anime anime-5" id="Oshi-no-Ko">
+                    <div class="tittle-anime tittle-anime-5">
+                        <h3>Oshi no Ko</h3>
+                    </div>
+                    <div class="img-anime img-anime-5">
+                        <img src="./imgs/Banner-Oshi-no-ko.jpg" alt="">
+                    </div>
+                    <div class="sinopsis sinopsis-anime-5">
+                        <ul>
+                            <li><span class="anime-span">Fecha de estreno:</span> 12 de abril de 2023</li>
+                            <li><span class="anime-span">Temporada:</span> 1</li>
+                            <li><span class="anime-span">Sinopsis:</span> La chica de 16 años, Ai Hoshino, es una
+                                talentosa y hermosa idol
+                                que es adorada por sus fanáticos. Ella es la personificación de la pureza, aunque no
+                                todo es tan bonito
+                                como lo pintan, ya que se un día se presenta frente a Goro Amamiya es un ginecólogo
+                                de una zona rural y
+                                gran fanático de Ai, descubriendo que esta se encontraba embaraza de mellizos. Goro
+                                le promete un parto seguro,
+                                pero poco sabe él que un encuentro con una misteriosa figura resultaría en su muerte
+                                prematura, o eso pensaba.
+                                Al abrir sus ojos, Goro se encuentra en el regazo de su amada idol y descubre que ha
+                                renacido como el hijo
+                                recién nacido de Ai.</li>
+                        </ul>
+                    </div>
+                </div>
 
-                    <div class="about-anime anime-7" id="Spy-x-Family">
-                        <div class="tittle-anime tittle-anime-7">
-                            <h3>Spy x Family</h3>
-                        </div>
-                        <div class="img-anime img-anime-7">
-                            <img src="./imgs/Banner-Spy-x-Family.jpg" alt="">
-                        </div>
-                        <div class="sinopsis sinopsis-anime-7">
-                            <ul>
-                                <li color="white"><span class="anime-span">Fecha de estreno:</span> 30 de septiembre de
-                                    2022
-                                </li>
-                                <li><span class="anime-span">Temporada:</span> 1 - Parte 2</li>
-                                <li><span class="anime-span">Sinopsis:</span> Tras recibir una misión especial,el agente
-                                    secreto Twilight, quien bajo su identidad
-                                    civil de Loid Forger, debe formar una familia para poder cumplirla con exito y
-                                    mantener
-                                    la
-                                    paz entre Ostania y Westalis, 2 paises que podrian ocasionar una posible guerra. Sin
-                                    embargo, Twilight desconoce que
-                                    la niña que adoptó como hija (Anya Forger) posee poderes de telepatía, mientras que
-                                    la
-                                    mujer con la que aceptó casarse (Yor Briar) es en realidad, una asesina profesional
-                                    al
-                                    servicio de Ostania.</li>
-                            </ul>
-                        </div>
+                <div class="about-anime anime-6" id="Record-of-Ragnarok">
+                    <div class="tittle-anime tittle-anime-6">
+                        <h3>Record of Ragnarok</h3>
+                    </div>
+                    <div class="img-anime img-anime-6">
+                        <img src="./imgs/Banner-Record-of-Ragnarok.jpg" alt="">
+                    </div>
+                    <div class="sinopsis sinopsis-anime-6">
+                        <ul>
+                            <li><span class="anime-span">Fecha de estreno:</span> 26 de enero de 2023.</li>
+                            <li><span class="anime-span">Temporada:</span> 2</li>
+                            <li><span class="anime-span">Sinopsis:</span> Durante el Ragnarok, la humanidad no está
+                                obteniendo resultados
+                                favorables: guerras, contaminación, destrucción de la naturaleza; La decisión de los
+                                dioses está tomada,
+                                los humanos se extinguirán; sin embargo,queda una última esperanza para ellos: las
+                                valkirias proponen que se
+                                active una antigua ley que permite el enfrentamiento de los dioses con los humanos
+                                más poderosos,
+                                el Ragnarök.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="about-anime anime-7" id="Spy-x-Family">
+                    <div class="tittle-anime tittle-anime-7">
+                        <h3>Spy x Family</h3>
+                    </div>
+                    <div class="img-anime img-anime-7">
+                        <img src="./imgs/Banner-Spy-x-Family.jpg" alt="">
+                    </div>
+                    <div class="sinopsis sinopsis-anime-7">
+                        <ul>
+                            <li color="white"><span class="anime-span">Fecha de estreno:</span> 30 de septiembre de
+                                2022</li>
+                            <li><span class="anime-span">Temporada:</span> 1 - Parte 2</li>
+                            <li><span class="anime-span">Sinopsis:</span> Tras recibir una misión especial,el agente
+                                secreto Twilight,
+                                quien bajo su identidad civil de Loid Forger, debe formar una familia para poder
+                                cumplirla con exito y
+                                mantener la paz entre Ostania y Westalis, 2 paises que podrian ocasionar una posible
+                                guerra.
+                                Sin embargo, Twilight desconoce que la niña que adoptó como hija (Anya Forger) posee
+                                poderes de telepatía,
+                                mientras que la mujer con la que aceptó casarse (Yor Briar) es en realidad, una
+                                asesina profesional
+                                al servicio de Ostania.</li>
+                        </ul>
                     </div>
                 </div>
         </section>
 
         <section class="questions" id="preguntas-frecuentes">
-            <div class="questions-color">
-
+            <div class="questions-and-title-container">
                 <div class="tittle-questions">
                     <h2 class="subtitle">Preguntas Frecuentes</h2>
-                    <p class="questions-paragraph">-Preguntas frecuentes acerca de la página-</p>
+                    <p class="questions-paragraph">-Preguntas frecuentes para y sobre la página realizada por el público-</p>
                 </div>
 
                 <div class="questions-container">
@@ -419,9 +382,12 @@
                                     <img src="./imgs/arrow.svg" class="questions-img" alt="">
                                 </span>
                             </h3>
-                            <p class="questions-show">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat
-                                obcaecati iure asperiores, quisquam nulla alias, consequuntur dolorum necessitatibus,
-                                molestias ad perspiciatis quis natus deleniti ratione excepturi ipsa voluptate consequatur
+                            <p class="questions-show">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Quaerat
+                                obcaecati iure asperiores, quisquam nulla alias, consequuntur dolorum
+                                necessitatibus,
+                                molestias ad perspiciatis quis natus deleniti ratione excepturi ipsa voluptate
+                                consequatur
                                 vero.</p>
 
                         </div>
@@ -429,14 +395,17 @@
 
                     <article class="questions-padding">
                         <div class="questions-answers">
-                            <h3 class="questions-title">¿La información es confiable?
+                            <h3 class="questions-title">¿La información mostrada es confiable?
                                 <span class="questions-arrow">
                                     <img src="./imgs/arrow.svg" class="questions-img" alt="">
                                 </span>
                             </h3>
-                            <p class="questions-show">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat
-                                obcaecati iure asperiores, quisquam nulla alias, consequuntur dolorum necessitatibus,
-                                molestias ad perspiciatis quis natus deleniti ratione excepturi ipsa voluptate consequatur
+                            <p class="questions-show">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Quaerat
+                                obcaecati iure asperiores, quisquam nulla alias, consequuntur dolorum
+                                necessitatibus,
+                                molestias ad perspiciatis quis natus deleniti ratione excepturi ipsa voluptate
+                                consequatur
                                 vero.</p>
 
                         </div>
@@ -444,14 +413,17 @@
 
                     <article class="questions-padding">
                         <div class="questions-answers">
-                            <h3 class="questions-title">¿Animes favoritos?
+                            <h3 class="questions-title">¿Cuales son los animes favoritos de la comunidad?
                                 <span class="questions-arrow">
                                     <img src="./imgs/arrow.svg" class="questions-img" alt="">
                                 </span>
                             </h3>
-                            <p class="questions-show">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat
-                                obcaecati iure asperiores, quisquam nulla alias, consequuntur dolorum necessitatibus,
-                                molestias ad perspiciatis quis natus deleniti ratione excepturi ipsa voluptate consequatur
+                            <p class="questions-show">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Quaerat
+                                obcaecati iure asperiores, quisquam nulla alias, consequuntur dolorum
+                                necessitatibus,
+                                molestias ad perspiciatis quis natus deleniti ratione excepturi ipsa voluptate
+                                consequatur
                                 vero.</p>
 
                         </div>
@@ -464,39 +436,36 @@
                                     <img src="./imgs/arrow.svg" class="questions-img" alt="">
                                 </span>
                             </h3>
-                            <p class="questions-show">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat
-                                obcaecati iure asperiores, quisquam nulla alias, consequuntur dolorum necessitatibus,
-                                molestias ad perspiciatis quis natus deleniti ratione excepturi ipsa voluptate consequatur
+                            <p class="questions-show">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Quaerat
+                                obcaecati iure asperiores, quisquam nulla alias, consequuntur dolorum
+                                necessitatibus,
+                                molestias ad perspiciatis quis natus deleniti ratione excepturi ipsa voluptate
+                                consequatur
                                 vero.</p>
                         </div>
                     </article>
                 </div>
             </div>
-
         </section>
-
     </main>
 
     <footer class="footer">
         <div class="footer-container">
             <div class="row">
-                <div class="footer-col footer-img">
+                <div class="footer-col footer-img-container">
                     <div class="first-part-footer">
                         <div class="footer-img">
-                            <a href="#"><img src="./imgs/Logo.png" alt=""></a>
+                            <img src="./imgs/Logo.png" alt="">
                         </div>
-
                         <div class="footer-copyright">
                             <p><span class="footerspan">&copy; ANIME FAN PAGE</span> <br>Todos los Derechos Reservados
                                 2023</p>
                         </div>
-
-
-
                     </div>
                 </div>
-                <div class="footer-col">
-                    <h4>Lorem</h4>
+
+                <div class="footer-col footer-col-1">
                     <h4>Lorem</h4>
                     <ul>
                         <li><a href="#">lorem</a></li>
@@ -510,7 +479,6 @@
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Lorem</h4>
                     <h4>Lorem</h4>
                     <ul>
                         <li><a href="#">lorem</a></li>
@@ -525,7 +493,6 @@
                 </div>
                 <div class="footer-col footer-social">
                     <h4>Siguenos en nuestras redes</h4>
-                    <h4>Siguenos en nuestras redes</h4>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
@@ -535,6 +502,7 @@
             </div>
         </div>
     </footer>
+
     <script src="questions.js"></script>
     <script src="navbar.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
