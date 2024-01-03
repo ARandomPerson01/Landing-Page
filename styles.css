@@ -45,7 +45,6 @@ a{
 .header {
     width: 100%;
     background: #ffffffec;
-    width: 100%;
     z-index: 100; 
     background-color: rgba(255, 255, 255, 1);
     max-height: auto;
@@ -55,7 +54,6 @@ a{
   .nav {
     margin: auto;
     max-width: 1200px;
-    height: 2rem;
     height: 2rem;
     display: flex;
     justify-content: space-between;
@@ -69,7 +67,6 @@ a{
     font-weight: 500;
     width: 16%;
     margin-left: 10px;
-    width: 16%;
     margin-left: 10px;
   }
   
@@ -86,19 +83,12 @@ a{
     cursor: pointer;
   }
   
-  /*NAVBAR RESPONSIVE*/
-  @media (max-width: 767px) {
-    .navM {
-      position: fixed;
-      width: 100%;
-      background: #fff;
-      top: -150%;
-      left: 0;
-      padding: 3.5rem 0;
-      transition: 0.4s;
-      z-index: 100;
-      border-radius: 0 0 1.5rem 1.5rem;
-    }
+  .navList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1.5rem;
+    margin: auto;
   }
   
   .navclose {
@@ -107,14 +97,6 @@ a{
     top: 0.5rem;
     right: 0.7rem;
     cursor: pointer;
-  }
-  
-  .navList {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 1.5rem;
-    margin: auto;
   }
 
   .navLink:hover {
@@ -170,7 +152,8 @@ a{
     max-width: 100%;
     justify-content: center;
     margin: auto;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
+    background-color: #000;
 }
 
 .carousel-item{
@@ -274,24 +257,6 @@ a{
     opacity: .9;
     transition: .5 ease;
     border: 3px solid #000;
-}
-
-.gallery-img{
-    display: flex;
-    width: 100%;
-    height: 100%;
-    margin: auto;
-    margin-right: 0;
-    margin-left: 0;
-    border-left: 0;
-}
-
-.img-gallery:hover{
-    cursor: pointer;
-    cursor: pointer;
-    width: 500px;
-    opacity: 1;
-    filter: contrast(120%);
 }
 
 /*SINOPSIS-CONTAINER*/
@@ -689,3 +654,136 @@ a{
         font-size: .96rem;
     }
 }
+
+/*NAVBAR RESPONSIVE*/
+@media (max-width: 1200px){
+    .principal-title h1, .medium-tittle h2, .subtitle{
+        font-size: 1.74rem;
+    }
+
+    .nav{
+        width: 96%;
+        margin: auto;
+    }
+
+    .carousel-item img{
+        height: 100%;
+        width: 100%;
+    }
+
+    .carousel-item{
+        height: 88vh;
+    }
+
+    .box .principal-title-carrousel{
+        font-size: 1.6rem;
+    }
+
+    .box .paragraph-carrousel{
+        font-size: 1.34rem;
+    }
+
+    .box h3{
+        font-size: 1.8rem;
+    }
+    
+    .box h4{
+        font-size: 1.6rem;
+    }
+
+    .box p{
+        font-size: 1.16rem;
+    }
+
+    .container-gallery{
+        height: 600px;
+    }
+
+    .img-gallery{
+        border: 1.8px solid #000;
+    }
+    
+    .img-gallery-2, .img-gallery-3, .img-gallery-4, .img-gallery-5, .img-gallery-6, .img-gallery-7{
+        border-left: none;
+    }
+
+    .gallery-img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .img-gallery:hover{
+        cursor: pointer;
+        width: 400px;
+        opacity: 1;
+        filter: contrast(110%);
+    }
+
+    .anime-sinopsis{
+        width: 90%;
+        margin: auto;
+    }
+
+    .tittle-anime h3{
+        font-size: 1.64rem;
+    }
+    
+    .sinopsis ul li, .anime-span{
+        font-size: 1rem;
+    }
+
+    .questions-and-title-container{
+        width: 88%;
+    }
+
+    .questions-paragraph{
+        font-size: 1rem;
+    }
+
+    .questions-title{
+        font-size: 1.06rem;
+    }
+
+    .questions-show{
+        font-size: .96rem;
+    }
+
+    .footer{
+        width: 100%;
+    }
+
+    .footer-container{
+        width: 94%;
+    }
+
+    .footer-img{
+        width: 100%;
+    }
+
+    .footer-img img{
+        width: 100%;
+        margin-bottom: 4px;
+    }
+
+    .footerspan{
+        font-size: .96rem;
+    }
+
+    .footer-col h4, .footer-col ul li{
+        font-size: .96rem;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .navM {
+      position: fixed;
+      width: 100%;
+      background: #fff;
+      top: -150%;
+      left: 0;
+      padding: 3.5rem 0;
+      transition: 0.4s;
+      z-index: 100;
+      border-radius: 0 0 1.5rem 1.5rem;
+    }
+  }
