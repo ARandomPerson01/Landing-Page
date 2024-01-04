@@ -541,102 +541,6 @@ a{
 	background-color: #ffffff;
 }
 
-/*FOOTER - RESPONSIVE*/
-@media(max-width: 767px){
-  .footer-col{
-    width: 50%;
-    margin-bottom: 30px;
-}
-}
-@media(max-width: 574px){
-  .footer-col{
-    width: 100%;
-}
-}
-
-/*RESPONSIVE*/
-@media(max-width: 574px){
-    /*Nav-bar*/
-    .header{
-        width: 100%;
-    }
-
-    .nav{
-        width: 96%;
-        justify-content: space-between;
-    }
-
-    .navL-img{
-        max-width: 100%;
-        border-left: 10px;
-    }
-
-    .navLink{
-        font-size: .96rem;
-    }
-
-    /*Slider*/
-
-    .container-news{
-        background: red;
-        height: 500px;
-    }
-
-    .tittle-carrousel h2{
-        font-size: 2rem;
-    }
-
-
-    .box h3{
-        font-size: 2rem;
-    }
-
-    .box h4{
-        font-size: 1.6rem;
-    }
-
-    .box p{
-        display: none;
-    }
-
-    .carousel-item img{
-        height: 540px;
-    }
-
-    /*Destacados*/
-    .gallery{
-        margin-top: 500px;
-    }
-
-    .img-gallery:hover{
-        cursor: pointer;
-        width: 300px;
-        opacity: 1;
-        filter: contrast(120%);
-    }
-    
-    /*Sinopsis*/
-    .about-anime{
-        width: 90%;
-    }
-
-    .tittle-anime h3{
-        font-size: 1.6rem;
-        margin: auto;
-    }
-
-    .img-anime{
-        width: 100%;
-        overflow: hidden;
-        left: -10px;
-
-    }
-
-    .sinopsis li, .anime-span{
-        font-size: .96rem;
-    }
-}
-
 /*NAVBAR RESPONSIVE*/
 @media (max-width: 1200px){
     .principal-title h1, .medium-tittle h2, .subtitle{
@@ -794,6 +698,72 @@ a{
     }
   }
 
-  @media (min-width: 1024px) and (max-width: 1025px) {
+  /*@media (min-width: 1024px) and (max-width: 1025px) {
     
+  }*/
+
+  @media (max-width: 768px) {
+    .nav{
+        height: 100%;
+    }
+    
+    .navL-img{
+        width: 110%;
+        margin: 6px;
+    }
+
+    .box h3{
+        font-size: 1.6rem;
+    }
+
+    .box h4{
+        font-size: 1.4rem;
+    }
+
+    .box p{
+        display: none;
+    }
+
+    .box a{
+        font-size: .9rem;
+    }
+
+    .carousel-control-next:hover, .carousel-control-prev:hover{
+        background: none;
+    }
+
+    .principal-title h1, .medium-tittle h2, .subtitle{
+        font-size: 1.4rem;
+    }
+
+    .tittle-anime h3{
+        font-size: 1.4rem;
+    }
+
+    .sinopsis ul li, .anime-span{
+        font-size: .88rem;
+    }
+
+    .questions-paragraph{
+        font-size: .9rem;
+    }
+
+    .questions-title{
+        font-size: 1rem;
+    }
+
+    .questions-show{
+        font-size: .88rem;
+        margin-top: 0px;
+    }
+
+    .footer-copyright{
+        display: none;
+    }
   }
+
+
+  /*RESPONSIVE*/
+@media(max-width: 574px){
+    
+}
