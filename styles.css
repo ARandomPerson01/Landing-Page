@@ -657,26 +657,7 @@ a{
     }
   }
 
-  @media (min-width: 1024px) {
-    .nav {
-        height: calc(3.5rem + 1.5rem);
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .navclose, .navToggle {
-        display: none;
-    }
-    .navList {
-        flex-direction: row;
-        column-gap: 3rem;
-    }
-    .navLink {
-        text-transform: initial;
-        font-weight: initial;
-    }
-  }
-
+ 
   /*RESPONSIVE NEST HUB - 1024 x 600*/
   @media (max-width: 1024px) {
     .navM {
@@ -695,9 +676,25 @@ a{
     }
   }
 
-  /*@media (min-width: 1024px) and (max-width: 1025px) {
-    
-  }*/
+  @media (min-width: 1025px) {
+    .nav {
+        height: calc(3.5rem + 1.5rem);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navclose, .navToggle {
+        display: none;
+    }
+    .navList {
+        flex-direction: row;
+        column-gap: 3rem;
+    }
+    .navLink {
+        text-transform: initial;
+        font-weight: initial;
+    }
+  }
 
   @media (min-width: 768px) and (max-width:960px){
     .nav{
@@ -933,6 +930,15 @@ a{
   }
 
   @media (min-width: 961px) and (max-width: 1024px){
+    .nav{
+        height: 100%;
+    }
+    
+    .navL-img{
+        width: 110%;
+        margin: 6px;
+    }
+
     .carousel-inner{
         height: 74vh;
     }
