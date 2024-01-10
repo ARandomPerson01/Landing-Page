@@ -538,125 +538,122 @@ a{
 	background-color: #ffffff;
 }
 
-/*NAVBAR RESPONSIVE*/
-@media (max-width: 1200px){
-    .principal-title h1, .medium-tittle h2, .subtitle{
-        font-size: 1.74rem;
-    }
 
-    .nav{
-        width: 96%;
-        margin: auto;
-    }
+.principal-title h1, .medium-tittle h2, .subtitle{
+    font-size: 1.74rem;
+}
 
-    .carousel-item img{
-        height: 100%;
-        width: 100%;
-    }
+.nav{
+    width: 96%;
+    margin: auto;
+}
 
-    .carousel-item{
-        height: 88vh;
-    }
+.carousel-item img{
+    height: 100%;
+    width: 100%;
+}
 
-    .box .principal-title-carrousel{
-        font-size: 1.6rem;
-    }
+.carousel-item{
+    height: 88vh;
+}
 
-    .box .paragraph-carrousel{
-        font-size: 1.34rem;
-    }
+.box .principal-title-carrousel{
+    font-size: 1.6rem;
+}
 
-    .box h3{
-        font-size: 1.8rem;
-    }
-    
-    .box h4{
-        font-size: 1.6rem;
-    }
+.box .paragraph-carrousel{
+    font-size: 1.34rem;
+}
 
-    .box p{
-        font-size: 1.16rem;
-    }
+.box h3{
+    font-size: 1.8rem;
+}
 
-    .container-gallery{
-        height: 600px;
-    }
+.box h4{
+    font-size: 1.6rem;
+}
 
-    .img-gallery{
-        border: 1.8px solid #000;
-    }
-    
-    .img-gallery-2, .img-gallery-3, .img-gallery-4, .img-gallery-5, .img-gallery-6, .img-gallery-7{
-        border-left: none;
-    }
+.box p{
+    font-size: 1.16rem;
+}
 
-    .gallery-img{
-        width: 100%;
-        height: 100%;
-    }
-    
-    .img-gallery:hover{
-        cursor: pointer;
-        width: 400px;
-        opacity: 1;
-        filter: contrast(110%);
-    }
+.container-gallery{
+    height: 600px;
+}
 
-    .anime-sinopsis{
-        width: 90%;
-        margin: auto;
-    }
+.img-gallery{
+    border: 1.8px solid #000;
+}
 
-    .tittle-anime h3{
-        font-size: 1.64rem;
-    }
-    
-    .sinopsis ul li, .anime-span{
-        font-size: 1rem;
-    }
+.img-gallery-2, .img-gallery-3, .img-gallery-4, .img-gallery-5, .img-gallery-6, .img-gallery-7{
+    border-left: none;
+}
 
-    .questions-and-title-container{
-        width: 88%;
-    }
+.gallery-img{
+    width: 100%;
+    height: 100%;
+}
 
-    .questions-paragraph{
-        font-size: 1rem;
-    }
+.img-gallery:hover{
+    cursor: pointer;
+    width: 400px;
+    opacity: 1;
+    filter: contrast(110%);
+}
 
-    .questions-title{
-        font-size: 1.06rem;
-    }
+.anime-sinopsis{
+    width: 90%;
+    margin: auto;
+}
 
-    .questions-show{
-        font-size: .96rem;
-    }
+.tittle-anime h3{
+    font-size: 1.64rem;
+}
 
-    .footer{
-        width: 100%;
-    }
+.sinopsis ul li, .anime-span{
+    font-size: 1rem;
+}
 
-    .footer-container{
-        width: 94%;
-    }
+.questions-and-title-container{
+    width: 88%;
+}
 
-    .footer-img{
-        width: 100%;
-    }
+.questions-paragraph{
+    font-size: 1rem;
+}
 
-    .footer-img img{
-        width: 100%;
-        margin-bottom: 4px;
-    }
+.questions-title{
+    font-size: 1.06rem;
+}
 
-    .footerspan{
-        font-size: .96rem;
-    }
+.questions-show{
+    font-size: .96rem;
+}
 
-    .footer-col h4, .footer-col ul li{
-        font-size: .96rem;
-    }
-  }
+.footer{
+    width: 100%;
+}
 
+.footer-container{
+    width: 94%;
+}
+
+.footer-img{
+    width: 100%;
+}
+
+.footer-img img{
+    width: 100%;
+    margin-bottom: 4px;
+}
+
+.footerspan{
+    font-size: .96rem;
+}
+
+.footer-col h4, .footer-col ul li{
+    font-size: .96rem;
+}
  
   /*RESPONSIVE NEST HUB - 1024 x 600*/
   @media (max-width: 1024px) {
@@ -1117,3 +1114,286 @@ a{
         font-size: 1.04rem;
     }
 }
+
+@media (min-width: 1025px) and (max-width: 1400px){
+    .header{
+        width: 100%;
+        margin: auto;
+    }
+
+    .nav{
+        width: 94%;
+        justify-content: space-between;
+    }
+    
+    .navL{
+        width: 18vw;
+    }
+
+    .navL-img{
+        width: 100%;
+        margin: 6px;
+        margin: auto;
+    }
+
+    .navList li a{
+        font-size: 1.08rem;
+        font-weight: bolder;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px){
+    .carousel-inner{
+        height: 70vh;
+    }
+
+    .carousel-item img{
+        height: 70vh;
+        width: 100vw;
+    }
+
+    .box{
+        margin-bottom: 160px;
+    }
+
+    .box p{
+        font-size: 1.2rem;
+    }
+
+    .box a{
+        font-size: 1.06rem;
+    }
+
+    .container-gallery{
+        height: 84vh;
+    }
+        
+    .img-gallery:hover{
+        cursor: pointer;
+        width: 440px;
+        opacity: 1;
+        filter: contrast(110%);
+    }
+
+    .tittle-anime h3{
+        font-size: 1.76rem;
+    }
+
+    .sinopsis ul li, .anime-span{
+        font-size: 1.2rem;
+    }
+
+    .questions-paragraph{
+        font-size: 1.2rem;
+    }
+
+    .questions-title{
+        font-size: 1.14rem;
+    }
+
+    .questions-show{
+        font-size: 1.06rem;
+    }
+    
+    .questions-padding--add{
+        padding-bottom: 30px;
+        height: 168px;
+        transition: .3s;
+    }   
+
+    .footer-copyright .footerspan, .footer-copyright .footertext, .footer-col ul li a{
+        font-size: 1rem;
+    }
+
+    .footer-col h4, .footer-social a{
+        font-size: 1.06rem;
+    }
+}
+
+
+@media (min-width: 1025px){  
+    .footer-col{
+        width: 100%;
+    }
+
+    .first-part-footer{
+        display: flex;
+        margin: auto;
+        border-bottom: 2px solid #d0caca61;
+        max-width: 100vw;
+        padding: 0;
+        justify-content: space-around;
+    }
+
+    .footer-img{
+        width: 30vw;
+    }
+
+    .footer-img img{
+        width: 100%;
+    }
+
+    .footer-copyright{
+        margin: auto;
+        display: flex;
+        width: auto;
+        justify-content: space-around;
+    }
+
+    .footerspan{
+        margin: auto;
+        margin-right: 10px;
+    }
+
+    .footertext{
+        margin: auto;
+        margin-left: 10px;
+    }
+    
+    .footer-col h4{
+        text-align: center;
+    }
+
+    .footer-col-1 ul, .footer-col-2 ul{
+        columns: 2;
+        column-gap: 40px;
+    }
+
+    .container-links{
+        margin-top: 24px;
+        display: flex;
+        justify-content: baseline;
+        border-bottom: 2px solid #d0caca61
+    }
+
+    .footer-social{
+        display: flex;
+        width: 100%;
+        margin: auto;
+        text-align: start;
+        margin-top: 24px;
+        justify-content: space-evenly;
+    }
+    
+    .social-links, .footer-social h4{
+        margin: auto;
+    }
+}
+/*
+@media (max-width: 1200px){
+    .principal-title h1, .medium-tittle h2, .subtitle{
+        font-size: 1.74rem;
+    }
+
+    .nav{
+        width: 96%;
+        margin: auto;
+    }
+
+    .carousel-item img{
+        height: 100%;
+        width: 100%;
+    }
+
+    .carousel-item{
+        height: 88vh;
+    }
+
+    .box .principal-title-carrousel{
+        font-size: 1.6rem;
+    }
+
+    .box .paragraph-carrousel{
+        font-size: 1.34rem;
+    }
+
+    .box h3{
+        font-size: 1.8rem;
+    }
+    
+    .box h4{
+        font-size: 1.6rem;
+    }
+
+    .box p{
+        font-size: 1.16rem;
+    }
+
+    .container-gallery{
+        height: 600px;
+    }
+
+    .img-gallery{
+        border: 1.8px solid #000;
+    }
+    
+    .img-gallery-2, .img-gallery-3, .img-gallery-4, .img-gallery-5, .img-gallery-6, .img-gallery-7{
+        border-left: none;
+    }
+
+    .gallery-img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .img-gallery:hover{
+        cursor: pointer;
+        width: 400px;
+        opacity: 1;
+        filter: contrast(110%);
+    }
+
+    .anime-sinopsis{
+        width: 90%;
+        margin: auto;
+    }
+
+    .tittle-anime h3{
+        font-size: 1.64rem;
+    }
+    
+    .sinopsis ul li, .anime-span{
+        font-size: 1rem;
+    }
+
+    .questions-and-title-container{
+        width: 88%;
+    }
+
+    .questions-paragraph{
+        font-size: 1rem;
+    }
+
+    .questions-title{
+        font-size: 1.06rem;
+    }
+
+    .questions-show{
+        font-size: .96rem;
+    }
+
+    .footer{
+        width: 100%;
+    }
+
+    .footer-container{
+        width: 94%;
+    }
+
+    .footer-img{
+        width: 100%;
+    }
+
+    .footer-img img{
+        width: 100%;
+        margin-bottom: 4px;
+    }
+
+    .footerspan{
+        font-size: .96rem;
+    }
+
+    .footer-col h4, .footer-col ul li{
+        font-size: .96rem;
+    }
+  }*/
